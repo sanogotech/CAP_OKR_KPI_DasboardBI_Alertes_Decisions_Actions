@@ -1,0 +1,550 @@
+Voici un portail complet avec 10 onglets, intégrant l'ensemble des concepts CAP → OKR → KPI → BI → Alertes → IA, un fil rouge réaliste et une section formation.  
+Le code est prêt à être copié dans un fichier `.html` et ouvert dans un navigateur.
+
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide de pilotage · CAP → OKR → KPI → BI → Alertes → IA prédictive</title>
+    <!-- Bootstrap 5 + Icons + Google Fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f8fafc;
+            scroll-behavior: smooth;
+        }
+        .navbar-brand {
+            font-weight: 800;
+            background: linear-gradient(135deg, #0f766e, #b45309);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+            border-bottom: 4px solid #facc15;
+        }
+        .hero-section h1 {
+            font-weight: 800;
+            font-size: 2.5rem;
+        }
+        .tab-content {
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .nav-tabs .nav-link {
+            font-weight: 600;
+            color: #334155;
+            border: none;
+            padding: 0.8rem 1.2rem;
+            transition: all 0.2s;
+        }
+        .nav-tabs .nav-link:hover {
+            border-color: transparent;
+            color: #facc15;
+            background: #fffbeb;
+        }
+        .nav-tabs .nav-link.active {
+            color: #b45309;
+            border-bottom: 3px solid #b45309;
+            background: transparent;
+        }
+        .card-method {
+            border-left: 5px solid;
+            transition: transform 0.2s;
+        }
+        .card-method:hover {
+            transform: translateY(-5px);
+        }
+        .step-circle {
+            width: 40px;
+            height: 40px;
+            background: #facc15;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 0.75rem;
+        }
+        .fil-rouge-timeline {
+            border-left: 3px solid #e2e8f0;
+            padding-left: 1.5rem;
+        }
+        .timeline-item {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        .timeline-item::before {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background: #facc15;
+            border-radius: 50%;
+            position: absolute;
+            left: -2.1rem;
+            top: 0.25rem;
+        }
+        .badge-theme {
+            background: #eef2ff;
+            color: #1e3a8a;
+            border-radius: 20px;
+            padding: 0.2rem 0.8rem;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+        footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            .tab-content { padding: 1rem; }
+            .nav-tabs .nav-link { padding: 0.5rem 0.8rem; font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#"><i class="fas fa-chart-line me-2"></i>Pilotage Perf<span style="color:#b45309">.</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#guide">Guide</a></li>
+                <li class="nav-item"><a class="nav-link" href="#filrouge">Fil rouge</a></li>
+                <li class="nav-item"><a class="nav-link" href="#ressources">Ressources</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero-section text-center">
+    <div class="container">
+        <h1><i class="fas fa-cogs me-2"></i> CAP → OKR → KPI → BI → Alertes → IA</h1>
+        <p class="lead mt-3">Le guide complet pour transformer votre organisation en système de pilotage intelligent et proactif</p>
+        <div class="mt-4">
+            <span class="badge bg-warning text-dark me-2">Stratégique</span>
+            <span class="badge bg-info text-dark me-2">Opérationnel</span>
+            <span class="badge bg-success me-2">Prédictif</span>
+        </div>
+    </div>
+</section>
+
+<div class="container" id="guide">
+    <!-- Tabs -->
+    <ul class="nav nav-tabs justify-content-center flex-wrap mb-4" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation"><button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab">1. Introduction</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab">2. CAP</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab">3. OKR</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab">4. KPI</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" id="tab5-tab" data-bs-toggle="tab" data-bs-target="#tab5" type="button" role="tab">5. BI & Dashboards</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" id="tab6-tab" data-bs-toggle="tab" data-bs-target="#tab6" type="button" role="tab">6. Alertes</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" id="tab7-tab" data-bs-toggle="tab" data-bs-target="#tab7" type="button" role="tab">7. IA Prédictive</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" id="tab8-tab" data-bs-toggle="tab" data-bs-target="#tab8" type="button" role="tab">8. Gouvernance</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" id="tab9-tab" data-bs-toggle="tab" data-bs-target="#tab9" type="button" role="tab">9. Fil rouge (projet)</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" id="tab10-tab" data-bs-toggle="tab" data-bs-target="#tab10" type="button" role="tab">10. Formation & Ressources</button></li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+        <!-- 1. Introduction -->
+        <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+            <h2><i class="fas fa-compass me-2"></i> Pourquoi un système de pilotage intégré ?</h2>
+            <p>Dans les organisations modernes, la difficulté n’est plus de collecter des données, mais de les transformer en décisions rapides et utiles. La chaîne <strong>CAP → OKR → KPI → BI → Alertes → IA</strong> permet de passer d’un reporting passif à un pilotage intelligent.</p>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="card card-method h-100 border-0 shadow-sm" style="border-left-color: #1e3a8a;">
+                        <div class="card-body">
+                            <h5><i class="fas fa-flag-checkered"></i> CAP</h5>
+                            <p>Vision stratégique : direction, alignement, sens.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card card-method h-100 border-0 shadow-sm" style="border-left-color: #0f766e;">
+                        <div class="card-body">
+                            <h5><i class="fas fa-bullseye"></i> OKR</h5>
+                            <p>Traduction de la stratégie en objectifs mesurables.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <div class="card card-method h-100 border-0 shadow-sm" style="border-left-color: #b45309;">
+                        <div class="card-body">
+                            <h5><i class="fas fa-chart-simple"></i> KPI</h5>
+                            <p>Mesure opérationnelle de la performance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <div class="card card-method h-100 border-0 shadow-sm" style="border-left-color: #4f46e5;">
+                        <div class="card-body">
+                            <h5><i class="fas fa-chart-line"></i> BI + Alertes + IA</h5>
+                            <p>Visualisation, détection automatique et anticipation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="alert alert-warning mt-4">
+                <i class="fas fa-lightbulb"></i> <strong>Le vrai problème :</strong> une chaîne de pilotage cassée. Ce guide vous aide à la rétablir.
+            </div>
+        </div>
+
+        <!-- 2. CAP -->
+        <div class="tab-pane fade" id="tab2" role="tabpanel">
+            <h2><i class="fas fa-flag-checkered me-2"></i> CAP – Direction stratégique</h2>
+            <p>Le CAP est le niveau le plus stratégique. Il définit où l’organisation va et pourquoi.</p>
+            <div class="row mt-3">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5>🧭 Course</h5>
+                            <p><em>Où allons-nous ?</em> Ex: "Devenir leader européen de la logistique durable d’ici 2028".</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5>🤝 Alignment</h5>
+                            <p><em>Tout le monde va-t-il dans la même direction ?</em> Cohérence IT / métier / opérations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5>🔥 Purpose</h5>
+                            <p><em>Pourquoi faisons-nous cela ?</em> Sens et engagement. Ex: "Accélérer la transition énergétique".</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 p-3 bg-light rounded">
+                <h6><i class="fas fa-check-circle text-success"></i> Checklist CAP</h6>
+                <ul>
+                    <li>La direction est formulée de manière claire et ambitieuse (3-5 ans).</li>
+                    <li>Les départements clés (IT, métier, opérations) sont alignés.</li>
+                    <li>Le purpose est communiqué et compris par tous.</li>
+                    <li>Des OKR stratégiques sont dérivés du CAP.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 3. OKR -->
+        <div class="tab-pane fade" id="tab3" role="tabpanel">
+            <h2><i class="fas fa-bullseye me-2"></i> OKR – Objectifs et Résultats clés</h2>
+            <p>Les OKR traduisent le CAP en objectifs mesurables et ambitieux.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5>🎯 Objectif (qualitatif)</h5>
+                            <p>Ex: <em>Offrir une expérience client omnicanale fluide</em></p>
+                            <h5 class="mt-3">📊 Key Results (quantitatifs)</h5>
+                            <ul>
+                                <li>KR1 : Réduire le temps de résolution des incidents de 30% (de 4h à 2h45)</li>
+                                <li>KR2 : Augmenter le NPS de 10 points (de 45 à 55)</li>
+                                <li>KR3 : Atteindre 99,95% de disponibilité des services critiques</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="alert alert-info">
+                        <i class="fas fa-gem"></i> <strong>Principes OKR</strong><br>
+                        • Ambition (stretch) : viser haut, 70% de réussite est un succès.<br>
+                        • Autonomie : les équipes définissent le “comment”.<br>
+                        • Transparence : tous les OKR sont partagés.<br>
+                        • Découplage : ne pas lier à la rémunération individuelle.
+                    </div>
+                    <div class="mt-3">
+                        <strong>Exemple d’OKR stratégique :</strong><br>
+                        <code>Objectif : Devenir la référence de la livraison éco-responsable<br>
+                        KR1 : Réduire l’empreinte carbone des livraisons de 25%<br>
+                        KR2 : Atteindre 95% de livraisons avec emballages recyclés</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. KPI -->
+        <div class="tab-pane fade" id="tab4" role="tabpanel">
+            <h2><i class="fas fa-chart-simple me-2"></i> KPI – Mesure opérationnelle</h2>
+            <p>Les KPI sont les capteurs de performance. Ils doivent être actionnables, fiables et alignés.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Fiche KPI standard</h5>
+                    <ul>
+                        <li><strong>Nom :</strong> Taux de disponibilité</li>
+                        <li><strong>Formule :</strong> (temps dispo / temps total) × 100</li>
+                        <li><strong>Source :</strong> Monitoring Prometheus</li>
+                        <li><strong>Seuils :</strong> vert > 99,9% ; orange 99,5-99,9% ; rouge < 99,5%</li>
+                        <li><strong>Action :</strong> si rouge → escalade technique et RCA</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="bg-light p-3 rounded">
+                        <h6><i class="fas fa-check-circle"></i> Critères de validation d’un KPI</h6>
+                        <ul>
+                            <li>✔ Aligné sur un OKR</li>
+                            <li>✔ Mesurable et automatisé</li>
+                            <li>✔ Actionnable (déclenche une décision)</li>
+                            <li>✔ Compréhensible en 30 secondes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3">
+                <h6>Exemples de KPI par domaine</h6>
+                <div class="row">
+                    <div class="col-6 col-md-3"><span class="badge-theme">IT : Latence API</span></div>
+                    <div class="col-6 col-md-3"><span class="badge-theme">Business : NPS</span></div>
+                    <div class="col-6 col-md-3"><span class="badge-theme">Ops : MTTR</span></div>
+                    <div class="col-6 col-md-3"><span class="badge-theme">Sécurité : Temps de patching</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. BI & Dashboards -->
+        <div class="tab-pane fade" id="tab5" role="tabpanel">
+            <h2><i class="fas fa-chart-line me-2"></i> BI & Dashboards – Visualisation et pilotage</h2>
+            <p>Un dashboard n’est pas un outil de reporting, c’est un outil de décision.</p>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card bg-light mb-3">
+                        <div class="card-body">
+                            <h5>Architecture BI typique</h5>
+                            <pre class="bg-white p-2 border rounded">Sources (ERP, logs, CRM) → Data Lake → Modèle KPI → Dashboards (Power BI / Tableau) → Utilisateurs</pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="alert alert-warning">
+                        <i class="fas fa-lightbulb"></i> Bonne pratique : <br>
+                        • Vue CAP (stratégique)<br>
+                        • Vue OKR (pilotage)<br>
+                        • Vue KPI (opérationnel)<br>
+                        • Vue Alertes (temps réel)
+                    </div>
+                </div>
+            </div>
+            <h6 class="mt-3">Exemple de dashboard stratégique (Power BI)</h6>
+            <div class="bg-light p-3 rounded">
+                <i class="fas fa-chart-pie"></i> Indicateurs clés : progression des OKR, taux de réalisation, alertes critiques, satisfaction client.
+            </div>
+        </div>
+
+        <!-- 6. Alertes -->
+        <div class="tab-pane fade" id="tab6" role="tabpanel">
+            <h2><i class="fas fa-bell me-2"></i> Alertes – Détection en temps réel</h2>
+            <p>Transformer un KPI en signal d’action.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card border-danger mb-3">
+                        <div class="card-body text-danger">
+                            <h5>🔴 Critique</h5>
+                            <p>Panne système, SLA violé → action immédiate (SMS, escalade).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-warning mb-3">
+                        <div class="card-body text-warning">
+                            <h5>🟠 Warning</h5>
+                            <p>Latence > 300 ms, CPU > 85% → investigation rapide.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-info mb-3">
+                        <div class="card-body text-info">
+                            <h5>🟢 Info</h5>
+                            <p>Déploiement réussi, trafic normal → suivi sans action.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-light p-3 rounded">
+                <strong>Moteur d’alertes :</strong> KPI → seuil → règle → alerte → notification → action
+            </div>
+        </div>
+
+        <!-- 7. IA Prédictive -->
+        <div class="tab-pane fade" id="tab7" role="tabpanel">
+            <h2><i class="fas fa-brain me-2"></i> IA Prédictive – Anticipation</h2>
+            <p>Passer du réactif au proactif, puis au prédictif.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>🔮 Cas d’usage</h5>
+                    <ul>
+                        <li>Prédiction de panne serveur (surcharge CPU, disque)</li>
+                        <li>Anticipation du churn client</li>
+                        <li>Maintenance prédictive industrielle</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="alert alert-success">
+                        <i class="fas fa-chart-line"></i> Modèle type : analyse historique (séries temporelles, détection d’anomalies) → prédiction → action automatique ou alerte préventive.
+                    </div>
+                </div>
+            </div>
+            <p>Exemple : "risque de panne serveur dans 6h" → déclencher un scaling préventif.</p>
+        </div>
+
+        <!-- 8. Gouvernance -->
+        <div class="tab-pane fade" id="tab8" role="tabpanel">
+            <h2><i class="fas fa-building me-2"></i> Gouvernance & Culture</h2>
+            <p>Structure et rôles pour pérenniser la démarche.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Rôles clés</h5>
+                    <ul>
+                        <li><strong>Sponsor OKR</strong> : porte l’ambition, lève les obstacles.</li>
+                        <li><strong>Coach OKR</strong> : forme, facilite, garantit la méthode.</li>
+                        <li><strong>KPI Owner</strong> : responsable du suivi et des actions.</li>
+                        <li><strong>Comité KPI</strong> : valide, harmonise, supprime les indicateurs inutiles.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="bg-light p-3 rounded">
+                        <h6>📊 Maturité de gouvernance</h6>
+                        <ul>
+                            <li>🟥 Initial : KPI informels, pas de BI.</li>
+                            <li>🟠 Structuré : définitions standardisées.</li>
+                            <li>🟡 Opérationnel : dashboards actifs, alertes.</li>
+                            <li>🟢 Avancé : pilotage temps réel, amélioration continue.</li>
+                            <li>🚀 Intelligent : IA prédictive, optimisation automatique.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 9. Fil rouge – Projet complet -->
+        <div class="tab-pane fade" id="tab9" role="tabpanel">
+            <h2><i class="fas fa-project-diagram me-2"></i> Fil rouge : transformation de la logistique « EcoLogistics »</h2>
+            <p>Entreprise de livraison durable, 500 collaborateurs, 3 entrepôts, flotte de 200 véhicules électriques. Objectif : passer d’un pilotage réactif à un système prédictif intégré.</p>
+            
+            <div class="fil-rouge-timeline mt-4">
+                <div class="timeline-item">
+                    <div class="step-circle">1</div>
+                    <h5>Phase 1 – CAP & OKR stratégiques</h5>
+                    <p><strong>CAP :</strong> Devenir le leader français de la livraison urbaine zéro émission d’ici 2027, avec une expérience client temps réel.</p>
+                    <p><strong>OKR stratégiques (année N) :</strong><br>
+                    O1 : Fiabiliser l’expérience client omnicanale.<br>
+                    KR1 : Réduire les retards de livraison de 20% (de 12% à 9,6%).<br>
+                    KR2 : Augmenter le taux de satisfaction client (CSAT) à 88%.<br>
+                    O2 : Optimiser la maintenance des véhicules électriques.<br>
+                    KR3 : Réduire le MTTR des pannes flotte de 30% (de 4h à 2h48).</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="step-circle">2</div>
+                    <h5>Phase 2 – Définition des KPI & tableaux de bord</h5>
+                    <p><strong>KPI opérationnels :</strong><br>
+                    - Taux de livraison à l’heure (objectif 97%)<br>
+                    - Consommation énergétique moyenne par tournée (kWh)<br>
+                    - Temps de diagnostic panne (MTTD)<br>
+                    - Indice de confiance du conducteur (NPS interne)<br>
+                    - Données IoT : température batteries, kilométrage, alertes capteurs.</p>
+                    <p>Mise en place d’un data warehouse avec intégration des données ERP (SAP), CRM (Salesforce) et flotte IoT. Dashboards Power BI avec vues direction, opérations, maintenance.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="step-circle">3</div>
+                    <h5>Phase 3 – Alertes & IA prédictive</h5>
+                    <p><strong>Alertes :</strong><br>
+                    - Critique : panne véhicule bloquant une tournée → SMS + dispatch d’un véhicule de secours.<br>
+                    - Warning : batterie < 20% ou détection d’anomalie de température → avertissement conducteur.<br>
+                    - Info : fin de tournée, retour à base.</p>
+                    <p><strong>IA prédictive :</strong> modèle de régression (Random Forest) sur données historiques de pannes pour anticiper les risques de panne à 48h. Déploiement d’un workflow d’alerte préventive : si risque > 70%, planifier une maintenance programmée.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="step-circle">4</div>
+                    <h5>Phase 4 – Gouvernance & formation</h5>
+                    <p>Mise en place d’un comité de pilotage mensuel (DSI, Directeur logistique, Responsable maintenance). Création d’un référentiel central des KPI. Formation des équipes terrain à l’utilisation des dashboards et à l’interprétation des alertes. Célébration des premiers succès (baisse de 15% des retards après 6 mois).</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="step-circle">5</div>
+                    <h5>Résultats & amélioration continue</h5>
+                    <p>Après 12 mois : réduction de 25% des retards, MTTR flotte diminué de 35%, satisfaction client passée de 78% à 86%. L’IA prédictive a permis d’éviter 3 pannes majeures. Le modèle est étendu à l’optimisation des tournées (machine learning).</p>
+                </div>
+            </div>
+            <div class="alert alert-info mt-3">
+                <i class="fas fa-download"></i> <strong>Livrables du projet :</strong> CAP document, OKR stratégiques, référentiel KPI, dashboard Power BI, pipeline d’alertes, modèle ML de maintenance prédictive, runbooks, plan de formation.
+            </div>
+        </div>
+
+        <!-- 10. Formation & Ressources -->
+        <div class="tab-pane fade" id="tab10" role="tabpanel">
+            <h2><i class="fas fa-graduation-cap me-2"></i> Formation & Ressources</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>📚 Modules de formation recommandés</h5>
+                    <ul>
+                        <li><i class="fas fa-check-circle text-success"></i> Atelier CAP : définir la vision (4h)</li>
+                        <li><i class="fas fa-check-circle text-success"></i> Atelier OKR : co-construire objectifs et KR (1 journée)</li>
+                        <li><i class="fas fa-check-circle text-success"></i> Définition de KPI actionnables (demi-journée)</li>
+                        <li><i class="fas fa-check-circle text-success"></i> Conception de dashboards BI (2 jours)</li>
+                        <li><i class="fas fa-check-circle text-success"></i> Mise en place d’alertes et runbooks (1 journée)</li>
+                        <li><i class="fas fa-check-circle text-success"></i> Introduction à l’IA prédictive pour managers (1 journée)</li>
+                        <li><i class="fas fa-check-circle text-success"></i> Gouvernance et culture data-driven (demi-journée)</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>📖 Ressources</h5>
+                    <ul>
+                        <li><a href="#">Modèle Excel de fiche KPI (télécharger)</a></li>
+                        <li><a href="#">Grille de maturité KPI (score 0-100)</a></li>
+                        <li><a href="#">Checklist audit OKR</a></li>
+                        <li><a href="#">Template de runbook d’alerte</a></li>
+                        <li><a href="#">Bibliothèque de 100+ KPI prêts à l’emploi</a></li>
+                    </ul>
+                    <div class="mt-3 p-3 bg-light rounded">
+                        <strong><i class="fab fa-youtube"></i> Vidéos recommandées :</strong><br>
+                        • "Introduction aux OKR" (John Doerr)<br>
+                        • "Mesurer ce qui compte" – conférence OCTO<br>
+                        • "Observabilité et IA" – KubeCon
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4">
+                <h5>📅 Plan de déploiement type (12 semaines)</h5>
+                <div class="progress mb-2" style="height: 25px;">
+                    <div class="progress-bar bg-primary" style="width: 25%">Sem 1-3 : CAP + OKR</div>
+                    <div class="progress-bar bg-info" style="width: 25%">Sem 4-6 : KPI + Data</div>
+                    <div class="progress-bar bg-warning" style="width: 25%">Sem 7-9 : BI + Alertes</div>
+                    <div class="progress-bar bg-success" style="width: 25%">Sem 10-12 : IA + Gouvernance</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container text-center">
+        <p><i class="fas fa-chalkboard-user"></i> Guide de pilotage complet – CAP → OKR → KPI → BI → Alertes → IA prédictive</p>
+        <p class="small">Basé sur les bonnes pratiques OCTO, les modèles de gouvernance et les retours d’expérience terrain.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+```
