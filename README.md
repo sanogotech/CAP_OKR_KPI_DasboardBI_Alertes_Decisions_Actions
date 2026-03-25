@@ -11,7 +11,7 @@ Voici une version **détaillée, enrichie et structurée** de tes sections 🔰 
 
 ---
 
-# 🔰 1. INTRODUCTION (DÉTAILLÉE)
+# 🔰 1. INTRODUCTION 
 
 Dans une organisation moderne — qu’il s’agisse d’une **DSI**, d’un groupe industriel, d’une banque ou d’une entreprise de distribution — la performance ne dépend plus uniquement :
 
