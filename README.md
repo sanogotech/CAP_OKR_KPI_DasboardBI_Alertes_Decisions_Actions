@@ -107,7 +107,7 @@ CAP → OKR → KPI → Dashboard BI → Alertes → Décisions → Actions
 
 ---
 
-# 🧭 2. CAP = DIRECTION STRATÉGIQUE (DÉTAILLÉE)
+# 🧭 2. CAP = DIRECTION STRATÉGIQUE 
 
 ---
 
