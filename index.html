@@ -1,7 +1,4 @@
-Voici un portail complet avec 10 onglets, intégrant l'ensemble des concepts CAP → OKR → KPI → BI → Alertes → IA, un fil rouge réaliste et une section formation.  
-Le code est prêt à être copié dans un fichier `.html` et ouvert dans un navigateur.
 
-```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -165,331 +162,2006 @@ Le code est prêt à être copié dans un fichier `.html` et ouvert dans un navi
 
     <div class="tab-content" id="myTabContent">
         <!-- 1. Introduction -->
-        <div class="tab-pane fade show active" id="tab1" role="tabpanel">
-            <h2><i class="fas fa-compass me-2"></i> Pourquoi un système de pilotage intégré ?</h2>
-            <p>Dans les organisations modernes, la difficulté n’est plus de collecter des données, mais de les transformer en décisions rapides et utiles. La chaîne <strong>CAP → OKR → KPI → BI → Alertes → IA</strong> permet de passer d’un reporting passif à un pilotage intelligent.</p>
-            <div class="row mt-4">
-                <div class="col-md-6">
-                    <div class="card card-method h-100 border-0 shadow-sm" style="border-left-color: #1e3a8a;">
-                        <div class="card-body">
-                            <h5><i class="fas fa-flag-checkered"></i> CAP</h5>
-                            <p>Vision stratégique : direction, alignement, sens.</p>
-                        </div>
-                    </div>
+	
+<div class="tab-pane fade show active" id="tab1" role="tabpanel">
+    <h2><i class="fas fa-compass me-2"></i> Pourquoi un système de pilotage intégré ?</h2>
+    <p class="lead">Dans les organisations modernes, la difficulté n’est plus de collecter des données, mais de les transformer en décisions rapides et utiles. La chaîne <strong class="text-primary">CAP → OKR → KPI → BI → Alertes → IA</strong> permet de passer d’un reporting passif à un pilotage intelligent et proactif.</p>
+    
+    <div class="alert alert-warning mt-3">
+        <i class="fas fa-exclamation-triangle me-2"></i> <strong>Le problème réel :</strong> une chaîne de pilotage souvent cassée – CAP flou, OKR inexistants, KPI non actionnables, dashboards décoratifs, alertes ignorées, actions tardives. Ce guide vous aide à rétablir chaque maillon.
+    </div>
+
+    <!-- Définitions rapides -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <h4><i class="fas fa-book-open me-2"></i> Définitions clés</h4>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-3">
+            <div class="card h-100 border-0 shadow-sm" style="border-left: 4px solid #1e3a8a;">
+                <div class="card-body">
+                    <h5><i class="fas fa-flag-checkered"></i> CAP</h5>
+                    <p class="small">Vision stratégique : <strong>Course</strong> (direction), <strong>Alignment</strong> (alignement), <strong>Purpose</strong> (sens). Répond à « Où allons-nous et pourquoi ? ».</p>
                 </div>
-                <div class="col-md-6">
-                    <div class="card card-method h-100 border-0 shadow-sm" style="border-left-color: #0f766e;">
-                        <div class="card-body">
-                            <h5><i class="fas fa-bullseye"></i> OKR</h5>
-                            <p>Traduction de la stratégie en objectifs mesurables.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mt-3">
-                    <div class="card card-method h-100 border-0 shadow-sm" style="border-left-color: #b45309;">
-                        <div class="card-body">
-                            <h5><i class="fas fa-chart-simple"></i> KPI</h5>
-                            <p>Mesure opérationnelle de la performance.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mt-3">
-                    <div class="card card-method h-100 border-0 shadow-sm" style="border-left-color: #4f46e5;">
-                        <div class="card-body">
-                            <h5><i class="fas fa-chart-line"></i> BI + Alertes + IA</h5>
-                            <p>Visualisation, détection automatique et anticipation.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="alert alert-warning mt-4">
-                <i class="fas fa-lightbulb"></i> <strong>Le vrai problème :</strong> une chaîne de pilotage cassée. Ce guide vous aide à la rétablir.
             </div>
         </div>
-
-        <!-- 2. CAP -->
-        <div class="tab-pane fade" id="tab2" role="tabpanel">
-            <h2><i class="fas fa-flag-checkered me-2"></i> CAP – Direction stratégique</h2>
-            <p>Le CAP est le niveau le plus stratégique. Il définit où l’organisation va et pourquoi.</p>
-            <div class="row mt-3">
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body">
-                            <h5>🧭 Course</h5>
-                            <p><em>Où allons-nous ?</em> Ex: "Devenir leader européen de la logistique durable d’ici 2028".</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body">
-                            <h5>🤝 Alignment</h5>
-                            <p><em>Tout le monde va-t-il dans la même direction ?</em> Cohérence IT / métier / opérations.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body">
-                            <h5>🔥 Purpose</h5>
-                            <p><em>Pourquoi faisons-nous cela ?</em> Sens et engagement. Ex: "Accélérer la transition énergétique".</p>
-                        </div>
-                    </div>
+        <div class="col-md-6 col-lg-3 mb-3">
+            <div class="card h-100 border-0 shadow-sm" style="border-left: 4px solid #0f766e;">
+                <div class="card-body">
+                    <h5><i class="fas fa-bullseye"></i> OKR</h5>
+                    <p class="small">Objectifs & Key Results. Traduction du CAP en objectifs mesurables et ambitieux. L’objectif est qualitatif, les KR quantitatifs.</p>
                 </div>
             </div>
-            <div class="mt-4 p-3 bg-light rounded">
-                <h6><i class="fas fa-check-circle text-success"></i> Checklist CAP</h6>
-                <ul>
-                    <li>La direction est formulée de manière claire et ambitieuse (3-5 ans).</li>
-                    <li>Les départements clés (IT, métier, opérations) sont alignés.</li>
-                    <li>Le purpose est communiqué et compris par tous.</li>
-                    <li>Des OKR stratégiques sont dérivés du CAP.</li>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-3">
+            <div class="card h-100 border-0 shadow-sm" style="border-left: 4px solid #b45309;">
+                <div class="card-body">
+                    <h5><i class="fas fa-chart-simple"></i> KPI</h5>
+                    <p class="small">Indicateurs clés de performance. Mesurent la réalité terrain, doivent être actionnables et reliés aux OKR.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-3">
+            <div class="card h-100 border-0 shadow-sm" style="border-left: 4px solid #4f46e5;">
+                <div class="card-body">
+                    <h5><i class="fas fa-chart-line"></i> BI + Alertes + IA</h5>
+                    <p class="small">Visualisation des données, détection automatique des écarts, et anticipation par l’intelligence artificielle.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Questions clés à chaque niveau -->
+    <h4 class="mt-4"><i class="fas fa-question-circle me-2"></i> Questions clés à chaque niveau</h4>
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <thead class="table-light">
+                <tr><th>Niveau</th><th>Question clé</th><th>Exemple de réponse</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>CAP</td><td>Où allons-nous et pourquoi ?</td><td>« Devenir leader européen de la logistique durable d’ici 2028 pour accélérer la transition énergétique. »</td></tr>
+                <tr><td>OKR</td><td>Que voulons-nous accomplir concrètement ?</td><td>« Réduire les retards de livraison de 20% et augmenter le NPS de 10 points. »</td></tr>
+                <tr><td>KPI</td><td>Sommes-nous en train de réussir ?</td><td>« Taux de livraison à l’heure, temps de résolution des incidents, satisfaction client. »</td></tr>
+                <tr><td>BI</td><td>Que se passe-t-il maintenant ?</td><td>« Dashboard montrant la progression des OKR et les alertes actives. »</td></tr>
+                <tr><td>Alertes</td><td>Quand faut-il agir immédiatement ?</td><td>« Latence > 300 ms → investigation. Panne critique → escalade. »</td></tr>
+                <tr><td>IA prédictive</td><td>Que va-t-il se passer si rien ne change ?</td><td>« Risque de panne serveur dans 6h → déclencher scaling préventif. »</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Checklist pour bâtir un système solide -->
+    <h4 class="mt-4"><i class="fas fa-check-double me-2"></i> Checklist : 5 étapes pour un pilotage intégré</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> <strong>1. Définir le CAP</strong> – avec toutes les parties prenantes, documenter Course, Alignment, Purpose.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> <strong>2. Traduire en OKR</strong> – co-construire 2-3 objectifs stratégiques et 2-5 KR par objectif.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> <strong>3. Identifier les KPI actionnables</strong> – chaque KPI doit avoir une fiche (formule, source, seuils, action).</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> <strong>4. Industrialiser la BI et les alertes</strong> – automatiser les flux, créer des dashboards hiérarchisés, configurer des seuils.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> <strong>5. Intégrer l’IA prédictive</strong> – exploiter les données historiques pour anticiper et automatiser les actions préventives.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Sagesse et conseils (wisdom) -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card bg-light border-0">
+                <div class="card-body">
+                    <h5><i class="fas fa-gem text-warning me-2"></i> Sagesse & bonnes pratiques</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-quote-left me-2 text-muted"></i> « KPI sans action = KPI inutile. »</li>
+                        <li><i class="fas fa-quote-left me-2 text-muted"></i> « Les OKR ne doivent jamais être liés à la rémunération individuelle (découplage). »</li>
+                        <li><i class="fas fa-quote-left me-2 text-muted"></i> « Si on atteint 100% des objectifs, c’est qu’ils n’étaient pas assez ambitieux. »</li>
+                        <li><i class="fas fa-quote-left me-2 text-muted"></i> « La transparence des OKR favorise l’alignement horizontal et l’entraide. »</li>
+                        <li><i class="fas fa-quote-left me-2 text-muted"></i> « Un dashboard doit permettre une décision en moins de 30 secondes. »</li>
+                        <li><i class="fas fa-quote-left me-2 text-muted"></i> « L’IA prédictive ne remplace pas la gouvernance, elle l’augmente. »</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card bg-light border-0">
+                <div class="card-body">
+                    <h5><i class="fas fa-lightbulb text-warning me-2"></i> Retours d’expérience (REX)</h5>
+                    <p><strong>Cas OCTO – Victor :</strong> après un premier cycle où il a imposé ses OKR, Victor a co-construit la vision avec ses équipes. Résultat : engagement, autonomie, et atteinte des objectifs.</p>
+                    <p><strong>Cas Jean :</strong> a défini ses OKR seul, sans impliquer les équipes. Échec : désengagement, perte de sens, abandon de la méthode.</p>
+                    <p><strong>Leçon clé :</strong> la co-construction est indispensable. Le temps pris en amont est un investissement rentable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top 5 exemples concrets -->
+    <h4 class="mt-4"><i class="fas fa-chalkboard-user me-2"></i> Top 5 exemples concrets de la chaîne complète</h4>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-truck-fast text-primary"></i> 1. Logistique durable</h5>
+                    <p><strong>CAP :</strong> Leader de la livraison zéro émission. <strong>OKR :</strong> Réduire les retards de 20%. <strong>KPI :</strong> taux de livraison à l’heure. <strong>BI :</strong> dashboard temps réel des tournées. <strong>Alerte :</strong> retard critique → dispatch secours. <strong>IA :</strong> prédiction de panne des véhicules électriques.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-cloud-upload-alt text-info"></i> 2. Migration cloud</h5>
+                    <p><strong>CAP :</strong> Devenir cloud-native. <strong>OKR :</strong> Migrer 80% des apps critiques. <strong>KPI :</strong> coût cloud, temps de déploiement. <strong>BI :</strong> tableau de bord FinOps. <strong>Alerte :</strong> dépassement budget → revue d’optimisation. <strong>IA :</strong> prédiction de surcoût mensuel.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-churn text-danger"></i> 3. Réduction du churn client</h5>
+                    <p><strong>CAP :</strong> Fidéliser les clients premium. <strong>OKR :</strong> Baisser le churn de 5 points. <strong>KPI :</strong> churn rate, NPS. <strong>BI :</strong> segmentation client par risque. <strong>Alerte :</strong> baisse d’usage → campagne de fidélisation. <strong>IA :</strong> modèle prédictif de churn à 30 jours.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-database text-secondary"></i> 4. Performance base de données</h5>
+                    <p><strong>CAP :</strong> Disponibilité 99,99%. <strong>OKR :</strong> MTTR réduit de 50%. <strong>KPI :</strong> latence requêtes, CPU DB. <strong>BI :</strong> heatmap des requêtes lentes. <strong>Alerte :</strong> CPU > 85% → analyse. <strong>IA :</strong> prédiction de pics de charge pour scaling automatique.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-laptop-code text-success"></i> 5. Développement produit agile</h5>
+                    <p><strong>CAP :</strong> Accélérer le time-to-market. <strong>OKR :</strong> Réduire le lead time de 30%. <strong>KPI :</strong> lead time, fréquence de déploiement. <strong>BI :</strong> dashboard DORA metrics. <strong>Alerte :</strong> lead time > 15 jours → rétrospective. <strong>IA :</strong> prédiction des retards de sprint.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tips pour réussir -->
+    <div class="alert alert-success mt-3">
+        <h5><i class="fas fa-thumbs-up me-2"></i> 5 conseils pour réussir votre pilotage</h5>
+        <ol class="mb-0">
+            <li><strong>Commencez par un pilote</strong> – une équipe, un cycle, avant de généraliser.</li>
+            <li><strong>Impliquez les équipes</strong> – la co-construction est la clé de l’adhésion.</li>
+            <li><strong>Automatisez la collecte des données</strong> – fiabilité et gain de temps.</li>
+            <li><strong>Faites des revues régulières</strong> – hebdomadaires pour les KPI, trimestrielles pour les OKR.</li>
+            <li><strong>Célébrez les succès et tirez les leçons des échecs</strong> – l’amélioration continue est au cœur de la méthode.</li>
+        </ol>
+    </div>
+
+    <div class="text-center mt-4">
+        <p class="text-muted"><i class="fas fa-arrow-right"></i> Prêt à passer à l’action ? Explorez les onglets suivants pour approfondir chaque niveau de la chaîne.</p>
+        <a href="#" class="btn btn-outline-primary" onclick="event.preventDefault(); document.querySelector('#tab2-tab').click();"><i class="fas fa-flag-checkered"></i> Démarrer par le CAP</a>
+    </div>
+</div>
+
+
+        <!-- 2. CAP -->
+<div class="tab-pane fade" id="tab2" role="tabpanel">
+    <h2><i class="fas fa-flag-checkered me-2"></i> CAP – La boussole stratégique</h2>
+    <p class="lead">Le CAP est le niveau le plus stratégique du pilotage. Il définit <strong>où l’organisation va et pourquoi</strong>. Sans CAP clair, les OKR et KPI deviennent incohérents, et l’exécution se disperse.</p>
+    
+    <div class="alert alert-info">
+        <i class="fas fa-lightbulb me-2"></i> <strong>Rappel :</strong> CAP = <strong>Course</strong> (direction), <strong>Alignment</strong> (alignement), <strong>Purpose</strong> (sens). Trois dimensions indissociables.
+    </div>
+
+    <!-- Décomposé en trois dimensions -->
+    <div class="row mt-4">
+        <div class="col-md-4 mb-3">
+            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #1e3a8a;">
+                <div class="card-body">
+                    <h4><i class="fas fa-location-arrow"></i> Course</h4>
+                    <p><strong>Question :</strong> Où allons-nous concrètement ?</p>
+                    <p>C’est la trajectoire stratégique, l’horizon à 3-5 ans. Une Course précise évite la dispersion et donne un cadre à l’innovation.</p>
+                    <p class="text-muted small">Exemple : « Devenir le leader européen de la logistique durable d’ici 2028 ».</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #0f766e;">
+                <div class="card-body">
+                    <h4><i class="fas fa-handshake"></i> Alignment</h4>
+                    <p><strong>Question :</strong> Tout le monde va-t-il dans la même direction ?</p>
+                    <p>L’alignement garantit que les directions métiers, IT, opérations, et toutes les équipes partagent les mêmes priorités et ne travaillent pas en silos.</p>
+                    <p class="text-muted small">Exemple : « Ateliers trimestriels communs entre IT et métier pour valider les OKR stratégiques ».</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #b45309;">
+                <div class="card-body">
+                    <h4><i class="fas fa-heart"></i> Purpose</h4>
+                    <p><strong>Question :</strong> Pourquoi faisons-nous cela ?</p>
+                    <p>Le Purpose donne du sens, au-delà des chiffres. Il fédère les équipes et justifie l’engagement collectif. Un Purpose fort est un moteur de motivation durable.</p>
+                    <p class="text-muted small">Exemple : « Accélérer la transition énergétique pour les générations futures ».</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Questions clés pour chaque dimension -->
+    <h4 class="mt-4"><i class="fas fa-question-circle me-2"></i> Questions clés pour définir un CAP robuste</h4>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="bg-light p-3 rounded h-100">
+                <h5>🧭 Course</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-angle-right text-primary"></i> Où voulons-nous être dans 3 à 5 ans ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Quelle est notre ambition mesurable (parts de marché, impact, notoriété) ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Quelle transformation clé allons-nous opérer ?</li>
                 </ul>
             </div>
         </div>
+        <div class="col-md-4">
+            <div class="bg-light p-3 rounded h-100">
+                <h5>🤝 Alignment</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-angle-right text-primary"></i> Quelles sont les dépendances entre métiers et IT ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Chaque direction a-t-elle participé à la définition ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Existe-t-il des objectifs contradictoires entre services ?</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="bg-light p-3 rounded h-100">
+                <h5>🔥 Purpose</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-angle-right text-primary"></i> Pourquoi notre existence est-elle importante pour nos clients, nos employés, la société ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Quelle valeur apportons-nous au-delà du profit ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> En quoi notre mission est-elle unique ?</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-        <!-- 3. OKR -->
-        <div class="tab-pane fade" id="tab3" role="tabpanel">
-            <h2><i class="fas fa-bullseye me-2"></i> OKR – Objectifs et Résultats clés</h2>
-            <p>Les OKR traduisent le CAP en objectifs mesurables et ambitieux.</p>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <h5>🎯 Objectif (qualitatif)</h5>
-                            <p>Ex: <em>Offrir une expérience client omnicanale fluide</em></p>
-                            <h5 class="mt-3">📊 Key Results (quantitatifs)</h5>
+    <!-- Checklist pour valider un CAP -->
+    <h4 class="mt-4"><i class="fas fa-check-double me-2"></i> Checklist : un CAP prêt à l’emploi</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Le CAP est formulé en une phrase claire, compréhensible par tous.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Les trois dimensions (Course, Alignment, Purpose) sont explicitement décrites.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Il a été co-construit avec les parties prenantes clés (au moins les directions concernées).</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Le CAP est diffusé et affiché (intranet, réunions, one-pager).</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Des OKR stratégiques peuvent être directement dérivés du CAP.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Un processus de révision annuelle est prévu pour l’adapter si nécessaire.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Retours d'expérience (REX) -->
+    <h4 class="mt-4"><i class="fas fa-chalkboard-user me-2"></i> Retours d’expérience : ce qui marche, ce qui tue un CAP</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card border-0 bg-light">
+                <div class="card-body">
+                    <h5><i class="fas fa-check-circle text-success"></i> Succès – Victor (OCTO)</h5>
+                    <p>Victor a d’abord défini seul la vision et les OKR stratégiques. Face à la difficulté d’embarquer les équipes, il a pris le temps d’organiser des ateliers collectifs. Ensemble, ils ont affiné la vision, clarifié les termes, et co-construit les objectifs. Résultat : engagement, autonomie, appropriation et performance durable.</p>
+                    <p class="text-muted small">Leçon : la co-construction du CAP est un investissement rentable.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card border-0 bg-light">
+                <div class="card-body">
+                    <h5><i class="fas fa-times-circle text-danger"></i> Échec – Jean (OCTO)</h5>
+                    <p>Jean, VP Product, a écrit les OKR stratégiques seul, sans impliquer ses équipes. Il a présenté un CAP figé lors d’un séminaire. Les équipes n’ont pas compris le lien avec leur travail, et les OKR ont été abandonnés. Jean a confondu « communication » avec « co-construction ».</p>
+                    <p class="text-muted small">Leçon : imposer un CAP sans concertation tue l’adhésion.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sagesse & bonnes pratiques -->
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <div class="card bg-warning bg-opacity-10 border-0">
+                <div class="card-body">
+                    <h5><i class="fas fa-gem text-warning me-2"></i> Sagesse & conseils d’experts</h5>
+                    <div class="row">
+                        <div class="col-md-6">
                             <ul>
-                                <li>KR1 : Réduire le temps de résolution des incidents de 30% (de 4h à 2h45)</li>
-                                <li>KR2 : Augmenter le NPS de 10 points (de 45 à 55)</li>
-                                <li>KR3 : Atteindre 99,95% de disponibilité des services critiques</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Le CAP doit être suffisamment ambitieux pour inspirer, mais suffisamment concret pour guider. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « L’Alignment ne se décrète pas, il se construit par le dialogue. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Un Purpose authentique est celui que vos collaborateurs peuvent réciter spontanément. »</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Si le CAP change tous les ans, c’est qu’il n’est pas assez stratégique. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « La Course doit être mesurable : on sait quand on l’a atteinte. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Testez votre CAP : demandez à 10 managers de le reformuler. S’ils divergent, retravaillez-le. »</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="alert alert-info">
-                        <i class="fas fa-gem"></i> <strong>Principes OKR</strong><br>
-                        • Ambition (stretch) : viser haut, 70% de réussite est un succès.<br>
-                        • Autonomie : les équipes définissent le “comment”.<br>
-                        • Transparence : tous les OKR sont partagés.<br>
-                        • Découplage : ne pas lier à la rémunération individuelle.
-                    </div>
-                    <div class="mt-3">
-                        <strong>Exemple d’OKR stratégique :</strong><br>
-                        <code>Objectif : Devenir la référence de la livraison éco-responsable<br>
-                        KR1 : Réduire l’empreinte carbone des livraisons de 25%<br>
-                        KR2 : Atteindre 95% de livraisons avec emballages recyclés</code>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top 5 exemples concrets de CAP (par secteur) -->
+    <h4 class="mt-4"><i class="fas fa-building me-2"></i> Top 5 exemples concrets de CAP</h4>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-truck-fast text-primary"></i> Logistique</h5>
+                    <p><strong>Course :</strong> Devenir le leader européen de la livraison zéro émission d’ici 2028.<br>
+                    <strong>Alignment :</strong> IT, flotte, entrepôts, marketing synchronisés sur cette ambition.<br>
+                    <strong>Purpose :</strong> Accélérer la transition énergétique et réduire l’empreinte carbone des villes.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-chart-line text-success"></i> Banque / Finance</h5>
+                    <p><strong>Course :</strong> Devenir la banque de référence pour les PME innovantes d’ici 2027.<br>
+                    <strong>Alignment :</strong> Fusion des équipes commerciales et digitales, partage des données.<br>
+                    <strong>Purpose :</strong> Financer l’innovation locale et favoriser la croissance des entrepreneurs.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-cloud-upload-alt text-info"></i> Technologie / Cloud</h5>
+                    <p><strong>Course :</strong> Devenir un partenaire cloud de confiance pour les entreprises du CAC40 d’ici 2026.<br>
+                    <strong>Alignment :</strong> Équipes d’architecture, sécurité, commerciales alignées sur une offre souveraine.<br>
+                    <strong>Purpose :</strong> Garantir la souveraineté numérique des entreprises françaises.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-heartbeat text-danger"></i> Santé</h5>
+                    <p><strong>Course :</strong> Rendre la télémédecine accessible à 90% des français en zone rurale d’ici 2029.<br>
+                    <strong>Alignment :</strong> Déploiement conjoint des équipes IT, juridique, partenariats avec l’assurance maladie.<br>
+                    <strong>Purpose :</strong> Réduire les déserts médicaux et améliorer l’accès aux soins.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-leaf text-success"></i> Industrie / Énergie</h5>
+                    <p><strong>Course :</strong> Atteindre la neutralité carbone sur l’ensemble de la chaîne de production d’ici 2035.<br>
+                    <strong>Alignment :</strong> R&D, maintenance, logistique et finance travaillent sur un même plan de transition.<br>
+                    <strong>Purpose :</strong> Contribuer à la lutte contre le changement climatique et préserver les ressources.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tips pour réussir son CAP -->
+    <div class="alert alert-success mt-3">
+        <h5><i class="fas fa-thumbs-up me-2"></i> 5 conseils pour un CAP qui fait la différence</h5>
+        <ol class="mb-0">
+            <li><strong>Impliquez toutes les directions concernées</strong> – des ateliers de co-construction évitent les désalignements ultérieurs.</li>
+            <li><strong>Formulez la Course de façon mesurable</strong> – utilisez des indicateurs de haut niveau (parts de marché, notoriété, impact).</li>
+            <li><strong>Documentez le Purpose en une phrase simple</strong> – elle doit être facile à retenir et à partager.</li>
+            <li><strong>Faites vivre le CAP</strong> – affichez-le, citez-le dans les réunions, évaluez régulièrement la progression.</li>
+            <li><strong>Révisez-le annuellement</strong> – tout en maintenant une stabilité pour éviter la confusion.</li>
+        </ol>
+    </div>
+
+    <div class="text-center mt-4">
+        <p class="text-muted"><i class="fas fa-arrow-right"></i> Un CAP solide est la fondation de tout système de pilotage. L’étape suivante consiste à le traduire en OKR.</p>
+        <a href="#" class="btn btn-outline-primary" onclick="event.preventDefault(); document.querySelector('#tab3-tab').click();"><i class="fas fa-bullseye"></i> Passer aux OKR</a>
+    </div>
+</div>
+
+
+        <!-- 3. OKR -->
+<div class="tab-pane fade" id="tab3" role="tabpanel">
+    <h2><i class="fas fa-bullseye me-2"></i> OKR – Objectifs et Résultats clés</h2>
+    <p class="lead">Les OKR traduisent le CAP en objectifs mesurables et ambitieux. Ils répondent à la question : <strong>« Que voulons-nous accomplir concrètement et comment saurons-nous que nous avons réussi ? »</strong></p>
+    
+    <div class="alert alert-info">
+        <i class="fas fa-lightbulb me-2"></i> <strong>Principe fondamental :</strong> L’Objectif (O) est qualitatif, inspirant ; les Key Results (KR) sont quantitatifs, mesurables, et doivent être atteints pour valider l’objectif.
+    </div>
+
+    <!-- Structure d’un OKR -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm" style="border-left: 5px solid #0f766e;">
+                <div class="card-body">
+                    <h4><i class="fas fa-flag-checkered"></i> Objectif (O)</h4>
+                    <p><strong>Nature :</strong> qualitatif, inspirant, ambitieux.<br>
+                    <strong>Question :</strong> Que voulons-nous accomplir ?<br>
+                    <strong>Exemple :</strong> « Offrir une expérience client omnicanale fluide ».</p>
+                    <p class="text-muted small">Un bon objectif donne envie de se lever le matin. Il est formulé avec un verbe d’action et un qualificatif fort (devenir, transformer, révolutionner).</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm" style="border-left: 5px solid #b45309;">
+                <div class="card-body">
+                    <h4><i class="fas fa-chart-line"></i> Key Results (KR)</h4>
+                    <p><strong>Nature :</strong> quantitatifs, mesurables, limités dans le temps.<br>
+                    <strong>Question :</strong> Comment savons-nous que nous avons réussi ?<br>
+                    <strong>Exemple :</strong> « Réduire le temps de résolution des incidents de 30% (de 4h à 2h48) ».</p>
+                    <p class="text-muted small">Chaque KR doit avoir une valeur de départ (data 0) et une cible (data cible). 2 à 5 KR par objectif.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Questions clés pour définir un OKR -->
+    <h4 class="mt-4"><i class="fas fa-question-circle me-2"></i> Questions clés à chaque étape</h4>
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <thead class="table-light">
+                <tr><th>Étape</th><th>Questions à se poser</th></tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>Définir l’Objectif</strong></td><td>Quel domaine est le plus important pour progresser ? Pourquoi cet objectif maintenant ? Est-il inspirant et compréhensible par tous ?</td></tr>
+                <tr><td><strong>Ébaucher les KR</strong></td><td>À la fin de la période, comment saurons-nous que l’objectif est atteint ? Quelles métriques doivent évoluer ?</td></tr>
+                <tr><td><strong>Challenger les KR</strong></td><td>Si les KR sont atteints, l’objectif est-il automatiquement réussi ? Les KR sont-ils suffisamment ambitieux ?</td></tr>
+                <tr><td><strong>Suivi régulier</strong></td><td>Quels sont les progrès réels ? Pourquoi le niveau de confiance a-t-il changé ? Quel est le plan d’action pour la suite ?</td></tr>
+                <tr><td><strong>Bilan de fin de cycle</strong></td><td>Le score final est-il cohérent ? Les efforts étaient-ils justifiés ? Qu’avons-nous appris pour le prochain cycle ?</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Checklist pour des OKR solides -->
+    <h4 class="mt-4"><i class="fas fa-check-double me-2"></i> Checklist : un OKR prêt à l’emploi</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> L’Objectif est clair, inspirant, sans chiffre.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Il y a 2 à 5 Key Results par objectif.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Chaque KR a une data 0 et une data cible mesurables.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Les KR sont orientés outcome (résultat) et non output (activité).</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Les OKR ont été co-construits avec l’équipe.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Ils sont alignés sur le CAP et les OKR stratégiques.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Un rituel de suivi (hebdomadaire) est prévu.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Les OKR sont partagés et transparents dans l’organisation.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Retours d'expérience (REX) -->
+    <h4 class="mt-4"><i class="fas fa-chalkboard-user me-2"></i> Retours d’expérience : ce qui marche, ce qui tue les OKR</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card border-0 bg-light">
+                <div class="card-body">
+                    <h5><i class="fas fa-check-circle text-success"></i> Succès – Victor (OCTO)</h5>
+                    <p>Victor a d’abord défini seul les OKR stratégiques, sans succès. Puis il a organisé des ateliers collectifs avec ses équipes pour co-construire la vision et les OKR. Résultat : engagement, autonomie, et des OKR qui ont vraiment guidé l’action. Les équipes se sont approprié les objectifs et ont proposé leurs propres initiatives.</p>
+                    <p class="text-muted small">Leçon : la co-construction est le facteur clé de succès des OKR.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card border-0 bg-light">
+                <div class="card-body">
+                    <h5><i class="fas fa-times-circle text-danger"></i> Échec – Jean (OCTO)</h5>
+                    <p>Jean a écrit ses OKR seul, sans impliquer ses équipes. Il a imposé des KR vagues ou non mesurables, et a changé les objectifs en cours de route sans explication. Les équipes n’ont pas compris leur contribution, et les OKR ont été abandonnés. Jean a confondu « communication descendante » avec « alignement ».</p>
+                    <p class="text-muted small">Leçon : imposer des OKR sans co-construction tue l’adhésion.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sagesse & bonnes pratiques -->
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <div class="card bg-warning bg-opacity-10 border-0">
+                <div class="card-body">
+                    <h5><i class="fas fa-gem text-warning me-2"></i> Sagesse & conseils d’experts OKR</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Si on atteint 100% des objectifs, c’est qu’ils n’étaient pas assez ambitieux. » — John Doerr</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Un Key Result sans chiffre n’est pas un Key Result. » — Marissa Mayer</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Less is more : 1 à 3 objectifs maximum par cycle. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Ne liez jamais les OKR à la rémunération individuelle (découplage). »</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « La transparence des OKR favorise l’entraide et l’alignement horizontal. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Les OKR doivent être révisés au moins une fois par semaine (check-in). »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Un bon KR est un leading indicator, pas un lagging. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Célébrez les progrès, même petits. »</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Top 5 exemples concrets d’OKR (par domaine) -->
+    <h4 class="mt-4"><i class="fas fa-lightbulb me-2"></i> Top 5 exemples concrets d’OKR</h4>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-truck-fast text-primary"></i> Logistique</h5>
+                    <p><strong>Objectif :</strong> Fiabiliser l’expérience client omnicanale.<br>
+                    <strong>KR1 :</strong> Réduire les retards de livraison de 20% (de 12% à 9,6%).<br>
+                    <strong>KR2 :</strong> Augmenter le taux de satisfaction client (CSAT) à 88%.<br>
+                    <strong>KR3 :</strong> Réduire le MTTR des pannes flotte de 30%.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-chart-line text-success"></i> Commercial</h5>
+                    <p><strong>Objectif :</strong> Accélérer la conquête de nouveaux marchés.<br>
+                    <strong>KR1 :</strong> Signer 5 nouveaux contrats avec des entreprises du CAC40.<br>
+                    <strong>KR2 :</strong> Augmenter le pipeline de leads qualifiés de 40%.<br>
+                    <strong>KR3 :</strong> Réduire le cycle de vente de 60 jours à 45 jours.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-cloud-upload-alt text-info"></i> IT / DSI</h5>
+                    <p><strong>Objectif :</strong> Améliorer la fiabilité des systèmes critiques.<br>
+                    <strong>KR1 :</strong> Atteindre 99,95% de disponibilité des services critiques.<br>
+                    <strong>KR2 :</strong> Réduire le nombre d’incidents P1 de 10 à 3 par mois.<br>
+                    <strong>KR3 :</strong> Automatiser 80% des tests de non-régression.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-users text-secondary"></i> RH</h5>
+                    <p><strong>Objectif :</strong> Devenir un employeur de référence dans le secteur tech.<br>
+                    <strong>KR1 :</strong> Améliorer le eNPS (score de recommandation employé) de 45 à 60.<br>
+                    <strong>KR2 :</strong> Réduire le taux de turnover volontaire de 15% à 10%.<br>
+                    <strong>KR3 :</strong> Augmenter le nombre de candidatures qualifiées de 30%.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-chart-simple text-warning"></i> Produit / SaaS</h5>
+                    <p><strong>Objectif :</strong> Accélérer l’adoption de la nouvelle fonctionnalité IA.<br>
+                    <strong>KR1 :</strong> Atteindre 10 000 utilisateurs actifs mensuels (MAU).<br>
+                    <strong>KR2 :</strong> Obtenir un NPS > 50 sur la fonctionnalité.<br>
+                    <strong>KR3 :</strong> Réduire le temps de chargement initial de 3s à 1,5s.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tips pour réussir ses OKR -->
+    <div class="alert alert-success mt-3">
+        <h5><i class="fas fa-thumbs-up me-2"></i> 5 conseils pour des OKR qui transforment</h5>
+        <ol class="mb-0">
+            <li><strong>Co-construisez avec les équipes</strong> – organisez des ateliers où chacun contribue à la définition des objectifs.</li>
+            <li><strong>Limitez le nombre d’objectifs</strong> – 1 à 3 objectifs par équipe pour garder le focus.</li>
+            <li><strong>Utilisez des données pour fixer les cibles</strong> – partez de la data 0 (valeur actuelle) pour définir une cible ambitieuse mais réaliste.</li>
+            <li><strong>Faites des revues hebdomadaires</strong> – check-in de 15 minutes pour suivre la progression, identifier les blocages, ajuster les initiatives.</li>
+            <li><strong>Célébrez les apprentissages, pas seulement les succès</strong> – l’échec d’un KR est une source d’apprentissage précieuse.</li>
+        </ol>
+    </div>
+
+    <div class="text-center mt-4">
+        <p class="text-muted"><i class="fas fa-arrow-right"></i> Les OKR donnent le cap. L’étape suivante consiste à mesurer la progression avec des KPI actionnables.</p>
+        <a href="#" class="btn btn-outline-primary" onclick="event.preventDefault(); document.querySelector('#tab4-tab').click();"><i class="fas fa-chart-simple"></i> Passer aux KPI</a>
+    </div>
+</div>
+
 
         <!-- 4. KPI -->
-        <div class="tab-pane fade" id="tab4" role="tabpanel">
-            <h2><i class="fas fa-chart-simple me-2"></i> KPI – Mesure opérationnelle</h2>
-            <p>Les KPI sont les capteurs de performance. Ils doivent être actionnables, fiables et alignés.</p>
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>Fiche KPI standard</h5>
-                    <ul>
-                        <li><strong>Nom :</strong> Taux de disponibilité</li>
-                        <li><strong>Formule :</strong> (temps dispo / temps total) × 100</li>
-                        <li><strong>Source :</strong> Monitoring Prometheus</li>
-                        <li><strong>Seuils :</strong> vert > 99,9% ; orange 99,5-99,9% ; rouge < 99,5%</li>
-                        <li><strong>Action :</strong> si rouge → escalade technique et RCA</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <div class="bg-light p-3 rounded">
-                        <h6><i class="fas fa-check-circle"></i> Critères de validation d’un KPI</h6>
-                        <ul>
-                            <li>✔ Aligné sur un OKR</li>
-                            <li>✔ Mesurable et automatisé</li>
-                            <li>✔ Actionnable (déclenche une décision)</li>
-                            <li>✔ Compréhensible en 30 secondes</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-3">
-                <h6>Exemples de KPI par domaine</h6>
-                <div class="row">
-                    <div class="col-6 col-md-3"><span class="badge-theme">IT : Latence API</span></div>
-                    <div class="col-6 col-md-3"><span class="badge-theme">Business : NPS</span></div>
-                    <div class="col-6 col-md-3"><span class="badge-theme">Ops : MTTR</span></div>
-                    <div class="col-6 col-md-3"><span class="badge-theme">Sécurité : Temps de patching</span></div>
+
+<div class="tab-pane fade" id="tab4" role="tabpanel">
+    <h2><i class="fas fa-chart-simple me-2"></i> KPI – Les capteurs de la performance</h2>
+    <p class="lead">Les KPI (Key Performance Indicators) sont les indicateurs clés qui mesurent la réalité opérationnelle. Ils répondent à la question : <strong>« Sommes-nous en train de réussir ou non ? »</strong> Ils doivent être actionnables, fiables et alignés sur les OKR.</p>
+    
+    <div class="alert alert-info">
+        <i class="fas fa-lightbulb me-2"></i> <strong>Principe fondamental :</strong> Un KPI sans action associée est un indicateur décoratif. Chaque KPI doit déclencher une décision ou une action si un seuil est dépassé.
+    </div>
+
+    <!-- Définition et différence -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm" style="border-left: 5px solid #b45309;">
+                <div class="card-body">
+                    <h4><i class="fas fa-chart-line"></i> KPI vs Indicateur simple</h4>
+                    <p>Un KPI est un indicateur clé de performance, prioritaire, aligné sur un objectif stratégique (OKR). Il est utilisé pour piloter et déclencher des actions.</p>
+                    <p>Un indicateur simple peut être utile mais n’a pas nécessairement d’impact direct sur la décision.</p>
+                    <p class="text-muted small">Exemple : « Nombre de tickets support » est un indicateur. « Taux de résolution au premier contact (FCR) » est un KPI actionnable.</p>
                 </div>
             </div>
         </div>
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm" style="border-left: 5px solid #4f46e5;">
+                <div class="card-body">
+                    <h4><i class="fas fa-chalkboard-user"></i> Rôle du KPI dans la chaîne</h4>
+                    <p>CAP → OKR → KPI → BI → Alertes → IA</p>
+                    <p>Les KPI sont les données brutes qui alimentent les dashboards, déclenchent les alertes et servent d’entrée aux modèles prédictifs. Ils sont le « système nerveux » de l’organisation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fiche KPI standard -->
+    <h4 class="mt-4"><i class="fas fa-file-alt me-2"></i> Fiche KPI standard (à documenter pour chaque indicateur)</h4>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead class="table-light">
+                <tr><th>Champ</th><th>Description</th><th>Exemple</th></tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>Nom KPI</strong></td><td>Intitulé métier clair</td><td>Taux de disponibilité</td></tr>
+                <tr><td><strong>Description</strong></td><td>Ce que mesure le KPI</td><td>Pourcentage de temps où le service est opérationnel</td></tr>
+                <tr><td><strong>CAP/OKR associé</strong></td><td>Lien stratégique</td><td>OKR « Fiabiliser l’expérience client »</td></tr>
+                <tr><td><strong>Formule</strong></td><td>Calcul précis</td><td>(temps dispo / temps total) × 100</td></tr>
+                <tr><td><strong>Unité</strong></td><td>%, ms, €, etc.</td><td>%</td></tr>
+                <tr><td><strong>Source de données</strong></td><td>Système de référence</td><td>Prometheus, base de données</td></tr>
+                <tr><td><strong>Fréquence</strong></td><td>Temps réel, horaire, quotidien</td><td>Temps réel</td></tr>
+                <tr><td><strong>Seuils</strong></td><td>Vert / Orange / Rouge</td><td>Vert > 99,9% ; Orange 99,5-99,9% ; Rouge < 99,5%</td></tr>
+                <tr><td><strong>Owner</strong></td><td>Responsable du suivi</td><td>Responsable infrastructure</td></tr>
+                <tr><td><strong>Action associée</strong></td><td>Que faire si seuil franchi ?</td><td>Si rouge → escalade technique et RCA</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Questions clés pour définir un KPI -->
+    <h4 class="mt-4"><i class="fas fa-question-circle me-2"></i> Questions clés à se poser</h4>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="bg-light p-3 rounded h-100">
+                <h5><i class="fas fa-bullhorn"></i> Avant la définition</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-angle-right text-primary"></i> Quelle décision voulons-nous faciliter ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Quel problème voulons-nous résoudre ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Quel OKR est concerné ?</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="bg-light p-3 rounded h-100">
+                <h5><i class="fas fa-database"></i> Pendant la définition</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-angle-right text-primary"></i> La donnée est-elle disponible et fiable ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> La formule est-elle claire et automatisable ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Quelle est la valeur de départ (data 0) ?</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="bg-light p-3 rounded h-100">
+                <h5><i class="fas fa-bolt"></i> Après la définition</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-angle-right text-primary"></i> Le KPI est-il actionnable ? (déclenche une action)</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Les seuils sont-ils pertinents ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Un owner est-il désigné ?</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checklist de validation d’un KPI -->
+    <h4 class="mt-4"><i class="fas fa-check-double me-2"></i> Checklist : un KPI prêt à l’emploi</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Aligné sur un OKR (lien stratégique)</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Mesurable et automatisé (source fiable)</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Actionnable (seuils définis + action associée)</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Compréhensible en 30 secondes</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Owner désigné (responsable du suivi)</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Fréquence adaptée au besoin</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Intégré dans un dashboard BI</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Revue régulière (au moins mensuelle)</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Retours d'expérience (REX) -->
+    <h4 class="mt-4"><i class="fas fa-chalkboard-user me-2"></i> Retours d’expérience : ce qui marche, ce qui tue les KPI</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card border-0 bg-light">
+                <div class="card-body">
+                    <h5><i class="fas fa-check-circle text-success"></i> Succès – Industrialisation des KPI dans une DSI</h5>
+                    <p>Une DSI a mis en place un référentiel central des KPI avec fiches standardisées. Chaque KPI avait un owner métier et des seuils définis. Les alertes étaient automatiquement envoyées aux équipes concernées. Résultat : réduction de 40% du temps de résolution des incidents, grâce à une meilleure réactivité.</p>
+                    <p class="text-muted small">Leçon : la standardisation et l’automatisation sont essentielles.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card border-0 bg-light">
+                <div class="card-body">
+                    <h5><i class="fas fa-times-circle text-danger"></i> Échec – Trop de KPI, aucun pilotage</h5>
+                    <p>Une entreprise avait plus de 200 KPI dans son tableau de bord, sans hiérarchie ni action associée. Les comités de direction passaient 2 heures à les passer en revue sans décision. Résultat : fatigue, abandon, et retour au pilotage intuitif.</p>
+                    <p class="text-muted small">Leçon : trop de KPI tue le KPI. Mieux vaut 15 indicateurs clés que 200 inutiles.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sagesse & bonnes pratiques -->
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <div class="card bg-warning bg-opacity-10 border-0">
+                <div class="card-body">
+                    <h5><i class="fas fa-gem text-warning me-2"></i> Sagesse & conseils d’experts</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « KPI sans action = KPI inutile. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « On ne part jamais des données, on part de la décision à prendre. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Un KPI doit être compréhensible en 30 secondes. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Si un KPI n’est pas utilisé en réunion, il doit être supprimé. »</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Les KPI de vanité (nombre de likes, de téléchargements) sont des leurres. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « La gouvernance KPI est aussi importante que les KPI eux-mêmes. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Leading indicators (prédictifs) sont plus précieux que lagging (passés). »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Un KPI sans propriétaire (owner) est un KPI orphelin. »</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top 5 exemples concrets de KPI par domaine -->
+    <h4 class="mt-4"><i class="fas fa-chart-pie me-2"></i> Top 5 exemples concrets de KPI (avec seuils et actions)</h4>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-server text-primary"></i> IT / Infrastructure</h5>
+                    <p><strong>KPI :</strong> Disponibilité système<br>
+                    <strong>Seuils :</strong> Vert > 99,9% ; Orange 99,5-99,9% ; Rouge < 99,5%<br>
+                    <strong>Action :</strong> Rouge → escalade technique et analyse des causes (RCA).</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-tachometer-alt text-success"></i> Performance API</h5>
+                    <p><strong>KPI :</strong> Latence API (percentile 95)<br>
+                    <strong>Seuils :</strong> Vert < 200 ms ; Orange 200-500 ms ; Rouge > 500 ms<br>
+                    <strong>Action :</strong> Orange → investigation ; Rouge → optimisation prioritaire.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-users text-secondary"></i> Business / Client</h5>
+                    <p><strong>KPI :</strong> Net Promoter Score (NPS)<br>
+                    <strong>Seuils :</strong> Vert > 50 ; Orange 30-50 ; Rouge < 30<br>
+                    <strong>Action :</strong> Rouge → campagne de fidélisation et analyse des retours.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-chart-line text-warning"></i> Opérations</h5>
+                    <p><strong>KPI :</strong> Taux de résolution au premier contact (FCR)<br>
+                    <strong>Seuils :</strong> Vert > 80% ; Orange 60-80% ; Rouge < 60%<br>
+                    <strong>Action :</strong> Rouge → revue des processus de support et formation.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-shield-alt text-danger"></i> Sécurité</h5>
+                    <p><strong>KPI :</strong> Temps moyen de correction des vulnérabilités critiques<br>
+                    <strong>Seuils :</strong> Vert < 48h ; Orange 48h-7j ; Rouge > 7j<br>
+                    <strong>Action :</strong> Rouge → revue de la politique de patching et allocation de ressources.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tips pour réussir ses KPI -->
+    <div class="alert alert-success mt-3">
+        <h5><i class="fas fa-thumbs-up me-2"></i> 5 conseils pour des KPI qui transforment</h5>
+        <ol class="mb-0">
+            <li><strong>Partez de la décision, pas de la donnée</strong> – avant de créer un KPI, demandez-vous quelle action vous allez prendre.</li>
+            <li><strong>Standardisez avec une fiche KPI</strong> – cela garantit clarté, traçabilité et pérennité.</li>
+            <li><strong>Automatisez la collecte</strong> – les données manuelles sont sources d’erreur et de lenteur.</li>
+            <li><strong>Limitez le nombre de KPI critiques</strong> – 15 à 25 par domaine suffisent pour piloter efficacement.</li>
+            <li><strong>Révisez et nettoyez régulièrement</strong> – supprimez les indicateurs non utilisés ou redondants.</li>
+        </ol>
+    </div>
+
+    <div class="text-center mt-4">
+        <p class="text-muted"><i class="fas fa-arrow-right"></i> Les KPI sont les capteurs. L’étape suivante consiste à les visualiser et les rendre exploitables via des dashboards BI.</p>
+        <a href="#" class="btn btn-outline-primary" onclick="event.preventDefault(); document.querySelector('#tab5-tab').click();"><i class="fas fa-chart-line"></i> Passer aux dashboards BI</a>
+    </div>
+</div>
+
 
         <!-- 5. BI & Dashboards -->
-        <div class="tab-pane fade" id="tab5" role="tabpanel">
-            <h2><i class="fas fa-chart-line me-2"></i> BI & Dashboards – Visualisation et pilotage</h2>
-            <p>Un dashboard n’est pas un outil de reporting, c’est un outil de décision.</p>
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="card bg-light mb-3">
-                        <div class="card-body">
-                            <h5>Architecture BI typique</h5>
-                            <pre class="bg-white p-2 border rounded">Sources (ERP, logs, CRM) → Data Lake → Modèle KPI → Dashboards (Power BI / Tableau) → Utilisateurs</pre>
+<div class="tab-pane fade" id="tab5" role="tabpanel">
+    <h2><i class="fas fa-chart-line me-2"></i> BI & Dashboards – Visualiser pour décider</h2>
+    <p class="lead">La Business Intelligence (BI) transforme les données brutes en informations compréhensibles et exploitables. Les dashboards sont les interfaces qui permettent aux décideurs de piloter l’activité en un coup d’œil. Ils répondent à la question : <strong>« Que se passe-t-il maintenant et que devons-nous faire ? »</strong></p>
+    
+    <div class="alert alert-info">
+        <i class="fas fa-lightbulb me-2"></i> <strong>Principe fondamental :</strong> Un dashboard n’est pas un outil de reporting, c’est un outil de décision. Il doit permettre de comprendre une situation et de prendre une action en moins de 30 secondes.
+    </div>
+
+    <!-- Architecture et rôle -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm" style="border-left: 5px solid #4f46e5;">
+                <div class="card-body">
+                    <h4><i class="fas fa-project-diagram"></i> Architecture BI typique</h4>
+                    <p class="small">Sources (ERP, CRM, logs, IoT) → Data Lake / Data Warehouse → Modèle KPI → Dashboards BI → Utilisateurs</p>
+                    <p>Le data warehouse centralise et structure les données pour garantir une source unique de vérité. Les dashboards s’appuient sur ce modèle pour offrir des vues rapides et fiables.</p>
+                    <p class="text-muted small">Outils courants : Power BI, Tableau, Metabase, Looker.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm" style="border-left: 5px solid #0f766e;">
+                <div class="card-body">
+                    <h4><i class="fas fa-layer-group"></i> Les trois couches de dashboards</h4>
+                    <ul>
+                        <li><strong>Stratégique (CAP) :</strong> indicateurs macro, progression des OKR, alertes majeures – pour le CODIR.</li>
+                        <li><strong>Tactique (OKR) :</strong> suivi des objectifs, écarts vs cible – pour les managers.</li>
+                        <li><strong>Opérationnel (KPI) :</strong> données temps réel, détails des processus – pour les équipes terrain.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Questions clés pour concevoir un dashboard -->
+    <h4 class="mt-4"><i class="fas fa-question-circle me-2"></i> Questions clés avant de construire un dashboard</h4>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="bg-light p-3 rounded h-100">
+                <h5><i class="fas fa-users"></i> Pour qui ?</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-angle-right text-primary"></i> Quel est le profil de l’utilisateur ? (dirigeant, manager, analyste)</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Quelles sont ses compétences data ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> À quelle fréquence va-t-il consulter le dashboard ?</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="bg-light p-3 rounded h-100">
+                <h5><i class="fas fa-question"></i> Pour quoi faire ?</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-angle-right text-primary"></i> Quelle décision doit être facilitée ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Quels sont les indicateurs clés (KPI) à suivre ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Quelles sont les alertes prioritaires ?</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="bg-light p-3 rounded h-100">
+                <h5><i class="fas fa-mobile-alt"></i> Comment ?</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-angle-right text-primary"></i> Quel support (mobile, web, print) ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Quel niveau de granularité (drill-down) ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Quelle fréquence de rafraîchissement ?</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checklist pour un dashboard efficace -->
+    <h4 class="mt-4"><i class="fas fa-check-double me-2"></i> Checklist : un dashboard prêt à l’emploi</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Répond à une question décisionnelle claire.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Limité à 7-10 indicateurs maximum (vision macro).</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Hiérarchie visuelle : les plus importants en évidence.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Utilise des couleurs sémantiques (vert/orange/rouge).</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Permet le drill-down vers les détails.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Données actualisées à la fréquence adaptée.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Testé avec les utilisateurs finaux.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Documentation accessible (définitions des KPI).</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Retours d'expérience (REX) -->
+    <h4 class="mt-4"><i class="fas fa-chalkboard-user me-2"></i> Retours d’expérience : ce qui marche, ce qui tue les dashboards</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card border-0 bg-light">
+                <div class="card-body">
+                    <h5><i class="fas fa-check-circle text-success"></i> Succès – Dashboard stratégique Power BI</h5>
+                    <p>Une direction des opérations a conçu un dashboard avec seulement 8 indicateurs : progression des OKR, taux de disponibilité, NPS, incidents critiques, etc. Les indicateurs étaient accompagnés de feux tricolores et d’un commentaire automatique. Le CODIR passait de 2h de reporting à 30 minutes de décision. Le dashboard est devenu le support unique du comité de pilotage.</p>
+                    <p class="text-muted small">Leçon : la simplicité et la focalisation sur la décision sont clés.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card border-0 bg-light">
+                <div class="card-body">
+                    <h5><i class="fas fa-times-circle text-danger"></i> Échec – Le dashboard « usine à gaz »</h5>
+                    <p>Une équipe BI a livré un dashboard avec plus de 50 graphiques, sans hiérarchie ni explication. Les utilisateurs ne savaient pas où regarder. Aucune décision n’était prise. Le dashboard a été abandonné après 3 mois.</p>
+                    <p class="text-muted small">Leçon : trop d’informations tue l’information. Toujours commencer par l’essentiel.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sagesse & bonnes pratiques -->
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <div class="card bg-warning bg-opacity-10 border-0">
+                <div class="card-body">
+                    <h5><i class="fas fa-gem text-warning me-2"></i> Sagesse & conseils d’experts BI</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Un dashboard doit permettre une décision en moins de 30 secondes. » — Stephen Few</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Moins de graphiques, plus de sens. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « La couleur n’est pas décorative : elle doit attirer l’attention sur ce qui compte. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Concevez toujours pour l’utilisateur final, pas pour le responsable BI. »</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Le drill-down transforme un tableau de bord statique en outil d’investigation. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Une donnée non fiable est pire que pas de donnée. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Testez vos dashboards avec des vrais utilisateurs avant le déploiement. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Automatisez l’actualisation, mais gardez un contrôle humain sur les alertes. »</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="alert alert-warning">
-                        <i class="fas fa-lightbulb"></i> Bonne pratique : <br>
-                        • Vue CAP (stratégique)<br>
-                        • Vue OKR (pilotage)<br>
-                        • Vue KPI (opérationnel)<br>
-                        • Vue Alertes (temps réel)
-                    </div>
-                </div>
-            </div>
-            <h6 class="mt-3">Exemple de dashboard stratégique (Power BI)</h6>
-            <div class="bg-light p-3 rounded">
-                <i class="fas fa-chart-pie"></i> Indicateurs clés : progression des OKR, taux de réalisation, alertes critiques, satisfaction client.
             </div>
         </div>
+    </div>
+
+    <!-- Top 5 exemples concrets de dashboards (par usage) -->
+    <h4 class="mt-4"><i class="fas fa-tachometer-alt me-2"></i> Top 5 exemples concrets de dashboards</h4>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-chart-line text-primary"></i> Dashboard stratégique CODIR</h5>
+                    <p><strong>Indicateurs :</strong> Progression des OKR (%), NPS, CA, marge brute, taux d’incidents critiques, taux de disponibilité, satisfaction employé (eNPS).<br>
+                    <strong>Visualisation :</strong> Jauges avec feux, tendances mensuelles, alertes prioritaires en haut.<br>
+                    <strong>Fréquence :</strong> mensuelle, avec commentaires automatiques.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-microchip text-success"></i> Dashboard IT / SRE</h5>
+                    <p><strong>Indicateurs :</strong> Latence API (p95), taux d’erreur, CPU/mémoire par service, nombre de déploiements, taux de réussite des déploiements.<br>
+                    <strong>Visualisation :</strong> Graphiques temps réel, heatmap des erreurs, liste des alertes actives.<br>
+                    <strong>Fréquence :</strong> temps réel (rafraîchissement 1 min).</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-chart-simple text-warning"></i> Dashboard commercial</h5>
+                    <p><strong>Indicateurs :</strong> Pipeline (montant, nombre d’opportunités), taux de conversion, délai de vente, CA par région.<br>
+                    <strong>Visualisation :</strong> Funnel, carte géographique, comparaison vs objectif.<br>
+                    <strong>Fréquence :</strong> quotidienne ou hebdomadaire.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-truck-fast text-info"></i> Dashboard logistique</h5>
+                    <p><strong>Indicateurs :</strong> Taux de livraison à l’heure, temps de préparation des commandes, taux de rupture de stock, coût de transport par colis.<br>
+                    <strong>Visualisation :</strong> Cartographie des entrepôts, alertes sur retards, tendances hebdomadaires.<br>
+                    <strong>Fréquence :</strong> temps réel pour les alertes, quotidien pour les indicateurs.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-heartbeat text-danger"></i> Dashboard RH</h5>
+                    <p><strong>Indicateurs :</strong> Turnover, eNPS, taux d’absentéisme, temps de recrutement, nombre de candidatures par poste.<br>
+                    <strong>Visualisation :</strong> Évolution mensuelle, comparaison par service, objectifs annuels.<br>
+                    <strong>Fréquence :</strong> mensuelle.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tips pour réussir ses dashboards -->
+    <div class="alert alert-success mt-3">
+        <h5><i class="fas fa-thumbs-up me-2"></i> 5 conseils pour des dashboards qui transforment</h5>
+        <ol class="mb-0">
+            <li><strong>Commencez par une maquette papier</strong> – validez la hiérarchie et les indicateurs avec les utilisateurs avant de coder.</li>
+            <li><strong>Appliquez la règle des 7±2</strong> – limitez le nombre d’éléments visuels pour ne pas saturer l’attention.</li>
+            <li><strong>Utilisez des couleurs avec parcimonie</strong> – le rouge doit vraiment signifier un problème.</li>
+            <li><strong>Prévoyez des filtres et du drill-down</strong> – permet d’aller du macro au micro sans surcharger la vue principale.</li>
+            <li><strong>Documentez les définitions</strong> – une info-bulle ou un glossaire évite les interprétations erronées.</li>
+        </ol>
+    </div>
+
+    <div class="text-center mt-4">
+        <p class="text-muted"><i class="fas fa-arrow-right"></i> Les dashboards donnent la visibilité. L’étape suivante consiste à automatiser la détection des écarts avec des alertes intelligentes.</p>
+        <a href="#" class="btn btn-outline-primary" onclick="event.preventDefault(); document.querySelector('#tab6-tab').click();"><i class="fas fa-bell"></i> Passer aux alertes</a>
+    </div>
+</div>
+
 
         <!-- 6. Alertes -->
-        <div class="tab-pane fade" id="tab6" role="tabpanel">
-            <h2><i class="fas fa-bell me-2"></i> Alertes – Détection en temps réel</h2>
-            <p>Transformer un KPI en signal d’action.</p>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card border-danger mb-3">
-                        <div class="card-body text-danger">
-                            <h5>🔴 Critique</h5>
-                            <p>Panne système, SLA violé → action immédiate (SMS, escalade).</p>
-                        </div>
-                    </div>
+<div class="tab-pane fade" id="tab6" role="tabpanel">
+    <h2><i class="fas fa-bell me-2"></i> Alertes – Détection automatique et réaction rapide</h2>
+    <p class="lead">Les alertes transforment un KPI en signal d’action. Elles répondent à la question : <strong>« Quand devons-nous agir immédiatement ? »</strong> Un système d’alertes bien conçu évite les incidents majeurs et accélère la résolution des problèmes.</p>
+    
+    <div class="alert alert-info">
+        <i class="fas fa-lightbulb me-2"></i> <strong>Principe fondamental :</strong> Trop d’alertes tue l’alerte. Une alerte doit être pertinente, actionnable et priorisée. Sinon, les équipes développent une « fatigue d’alerte » et finissent par ignorer les signaux importants.
+    </div>
+
+    <!-- Types d’alertes -->
+    <div class="row mt-4">
+        <div class="col-md-4 mb-3">
+            <div class="card h-100 border-0 shadow-sm" style="border-left: 5px solid #dc2626;">
+                <div class="card-body">
+                    <h4><i class="fas fa-skull-crosswalk"></i> Critique</h4>
+                    <p><strong>Impact :</strong> Panne système, violation de SLA, sécurité compromise.<br>
+                    <strong>Action :</strong> Intervention immédiate, escalade, astreinte.<br>
+                    <strong>Exemple :</strong> « Système down depuis plus de 5 min » → SMS + appel.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="card border-warning mb-3">
-                        <div class="card-body text-warning">
-                            <h5>🟠 Warning</h5>
-                            <p>Latence > 300 ms, CPU > 85% → investigation rapide.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-info mb-3">
-                        <div class="card-body text-info">
-                            <h5>🟢 Info</h5>
-                            <p>Déploiement réussi, trafic normal → suivi sans action.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-light p-3 rounded">
-                <strong>Moteur d’alertes :</strong> KPI → seuil → règle → alerte → notification → action
             </div>
         </div>
+        <div class="col-md-4 mb-3">
+            <div class="card h-100 border-0 shadow-sm" style="border-left: 5px solid #f59e0b;">
+                <div class="card-body">
+                    <h4><i class="fas fa-exclamation-triangle"></i> Warning</h4>
+                    <p><strong>Impact :</strong> Dégradation progressive, risque de panne.<br>
+                    <strong>Action :</strong> Investigation, analyse de tendance, correction préventive.<br>
+                    <strong>Exemple :</strong> « CPU > 85% pendant 10 min » → investigation.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card h-100 border-0 shadow-sm" style="border-left: 5px solid #10b981;">
+                <div class="card-body">
+                    <h4><i class="fas fa-info-circle"></i> Info</h4>
+                    <p><strong>Impact :</strong> Événement normal, fin d’un processus.<br>
+                    <strong>Action :</strong> Suivi, pas d’intervention immédiate.<br>
+                    <strong>Exemple :</strong> « Déploiement réussi » → notification sur canal dédié.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Questions clés pour définir une alerte -->
+    <h4 class="mt-4"><i class="fas fa-question-circle me-2"></i> Questions clés avant de créer une alerte</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="bg-light p-3 rounded h-100">
+                <h5><i class="fas fa-bullhorn"></i> Pour quoi et pour qui ?</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-angle-right text-primary"></i> Quel KPI ou événement surveille-t-on ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Quel est l’impact métier si l’alerte se déclenche ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Qui doit être notifié (équipe, personne, canal) ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Quelle est la gravité (critique / warning / info) ?</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="bg-light p-3 rounded h-100">
+                <h5><i class="fas fa-sliders-h"></i> Comment déclencher et réagir ?</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-angle-right text-primary"></i> Quel seuil (statique, dynamique, tendance) ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Quelle fréquence de vérification ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Quel canal de notification (SMS, Teams, email) ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Quelle action doit être déclenchée (runbook) ?</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checklist pour un système d’alertes robuste -->
+    <h4 class="mt-4"><i class="fas fa-check-double me-2"></i> Checklist : une alerte prête à l’emploi</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Le KPI ou l’événement est fiable et mesuré automatiquement.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Les seuils sont définis et calibrés (pas trop sensibles).</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> La notification est adaptée à la criticité (SMS + appel pour critique).</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Un runbook (procédure) documente les actions à mener.</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Les canaux de notification sont configurés et testés régulièrement.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Les alertes sont dédupliquées (pas de spam).</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Une procédure d’escalade existe si le premier intervenant ne répond pas.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Un historique des alertes est conservé pour analyse.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Retours d'expérience (REX) -->
+    <h4 class="mt-4"><i class="fas fa-chalkboard-user me-2"></i> Retours d’expérience : ce qui marche, ce qui tue les alertes</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card border-0 bg-light">
+                <div class="card-body">
+                    <h5><i class="fas fa-check-circle text-success"></i> Succès – Alertes hiérarchisées et runbooks</h5>
+                    <p>Une DSI a mis en place des alertes avec trois niveaux de criticité. Les alertes critiques déclenchaient un SMS et une escalade automatique toutes les 5 minutes jusqu’à prise en charge. Les runbooks détaillaient les actions à mener (redémarrage, bascule, investigation). Résultat : MTTR réduit de 70%, et plus de nuits blanches pour les équipes.</p>
+                    <p class="text-muted small">Leçon : la clarté des seuils et des actions est clé.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card border-0 bg-light">
+                <div class="card-body">
+                    <h5><i class="fas fa-times-circle text-danger"></i> Échec – L’alerte « cri de loup »</h5>
+                    <p>Une équipe de supervision avait paramétré des alertes sur tous les serveurs avec des seuils trop bas. Résultat : plus de 200 alertes par jour, dont 90% de faux positifs. Les équipes ont désactivé les notifications, et une vraie panne est passée inaperçue pendant 3 heures.</p>
+                    <p class="text-muted small">Leçon : trop d’alertes tue l’alerte. Il faut élaguer et calibrer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sagesse & bonnes pratiques -->
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <div class="card bg-warning bg-opacity-10 border-0">
+                <div class="card-body">
+                    <h5><i class="fas fa-gem text-warning me-2"></i> Sagesse & conseils d’experts</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Une alerte qui ne déclenche pas d’action est un bruit. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Préférez une alerte tardive mais juste à une alerte précoce mais fausse. » — Google SRE</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Les seuils doivent être basés sur des SLO (objectifs de niveau de service), pas sur des valeurs arbitraires. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Automatisez les actions récurrentes pour les alertes courantes (ex: redémarrage). »</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Testez régulièrement vos alertes en simulation (game days). »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Utilisez des corrélations pour éviter les alertes en rafale. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Documentez chaque alerte avec un runbook accessible en un clic. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Réévaluez périodiquement la pertinence des seuils. »</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top 5 exemples concrets d’alertes (avec seuils et actions) -->
+    <h4 class="mt-4"><i class="fas fa-bell me-2"></i> Top 5 exemples concrets d’alertes</h4>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-server text-primary"></i> Panne serveur critique</h5>
+                    <p><strong>KPI :</strong> Disponibilité système<br>
+                    <strong>Seuil :</strong> down > 5 min<br>
+                    <strong>Niveau :</strong> Critique<br>
+                    <strong>Action :</strong> SMS + appel astreinte ; escalade toutes les 10 min ; runbook de bascule sur site secondaire.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-chart-line text-warning"></i> Latence API dégradée</h5>
+                    <p><strong>KPI :</strong> Latence p95<br>
+                    <strong>Seuil :</strong> > 300 ms pendant 5 min<br>
+                    <strong>Niveau :</strong> Warning<br>
+                    <strong>Action :</strong> Notification Teams à l’équipe de garde ; investigation des logs ; plan de scaling si tendance se confirme.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-chart-simple text-danger"></i> Taux d’erreur élevé</h5>
+                    <p><strong>KPI :</strong> Taux d’erreur HTTP 5xx<br>
+                    <strong>Seuil :</strong> > 1% sur 5 min<br>
+                    <strong>Niveau :</strong> Critique<br>
+                    <strong>Action :</strong> Alerte PagerDuty ; rollback automatique si possible ; runbook de diagnostic.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-cpu text-info"></i> Saturation CPU</h5>
+                    <p><strong>KPI :</strong> CPU usage<br>
+                    <strong>Seuil :</strong> > 85% pendant 15 min<br>
+                    <strong>Niveau :</strong> Warning<br>
+                    <strong>Action :</strong> Notification à l’équipe infrastructure ; analyse des threads ; préparation d’un scaling horizontal.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-shield-alt text-secondary"></i> Intrusion détectée</h5>
+                    <p><strong>KPI :</strong> Tentatives d’accès non autorisées<br>
+                    <strong>Seuil :</strong> > 5 échecs consécutifs sur un compte admin<br>
+                    <strong>Niveau :</strong> Critique<br>
+                    <strong>Action :</strong> SMS + appel CSIRT ; blocage de l’IP ; analyse forensique.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tips pour réussir ses alertes -->
+    <div class="alert alert-success mt-3">
+        <h5><i class="fas fa-thumbs-up me-2"></i> 5 conseils pour des alertes qui transforment</h5>
+        <ol class="mb-0">
+            <li><strong>Calibrez vos seuils avec l’historique</strong> – utilisez des percentiles (p95, p99) pour éviter les faux positifs.</li>
+            <li><strong>Hiérarchisez : critique, warning, info</strong> – chaque niveau a un canal et une réactivité différente.</li>
+            <li><strong>Automatisez les actions de premier niveau</strong> – redémarrage, scaling, bascule peuvent être automatisés avant même l’alerte.</li>
+            <li><strong>Testez régulièrement vos alertes</strong> – simulez des incidents (game days) pour vérifier les runbooks et la réactivité.</li>
+            <li><strong>Maintenez à jour la documentation</strong> – runbooks, contacts, escalades. Rien de pire qu’une alerte sans procédure.</li>
+        </ol>
+    </div>
+
+    <div class="text-center mt-4">
+        <p class="text-muted"><i class="fas fa-arrow-right"></i> Les alertes permettent de réagir vite. L’étape suivante consiste à anticiper les problèmes avant qu’ils ne surviennent avec l’IA prédictive.</p>
+        <a href="#" class="btn btn-outline-primary" onclick="event.preventDefault(); document.querySelector('#tab7-tab').click();"><i class="fas fa-brain"></i> Passer à l’IA prédictive</a>
+    </div>
+</div>
+
 
         <!-- 7. IA Prédictive -->
-        <div class="tab-pane fade" id="tab7" role="tabpanel">
-            <h2><i class="fas fa-brain me-2"></i> IA Prédictive – Anticipation</h2>
-            <p>Passer du réactif au proactif, puis au prédictif.</p>
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>🔮 Cas d’usage</h5>
-                    <ul>
-                        <li>Prédiction de panne serveur (surcharge CPU, disque)</li>
-                        <li>Anticipation du churn client</li>
-                        <li>Maintenance prédictive industrielle</li>
-                    </ul>
+<div class="tab-pane fade" id="tab7" role="tabpanel">
+    <h2><i class="fas fa-brain me-2"></i> IA Prédictive – Anticiper pour mieux piloter</h2>
+    <p class="lead">L’IA prédictive analyse les données historiques pour prévoir les événements futurs et déclencher des actions proactives. Elle répond à la question : <strong>« Que va-t-il se passer si rien ne change ? »</strong> Elle permet de passer d’une organisation réactive à une organisation prédictive.</p>
+    
+    <div class="alert alert-info">
+        <i class="fas fa-lightbulb me-2"></i> <strong>Principe fondamental :</strong> L’IA prédictive ne remplace pas le jugement humain, elle l’augmente. Elle fournit des signaux d’alerte avancés et des recommandations, mais la décision finale reste humaine.
+    </div>
+
+    <!-- Concepts clés -->
+    <div class="row mt-4">
+        <div class="col-md-4 mb-3">
+            <div class="card h-100 border-0 shadow-sm" style="border-left: 5px solid #7e22ce;">
+                <div class="card-body">
+                    <h4><i class="fas fa-chart-line"></i> Séries temporelles</h4>
+                    <p>Modèles qui apprennent des tendances passées pour prédire des valeurs futures (ex: charge CPU, ventes, nombre d’incidents). Utilisés pour la maintenance prédictive et la planification de capacité.</p>
+                    <p class="text-muted small">Algorithmes : ARIMA, Prophet, LSTM.</p>
                 </div>
-                <div class="col-md-6">
-                    <div class="alert alert-success">
-                        <i class="fas fa-chart-line"></i> Modèle type : analyse historique (séries temporelles, détection d’anomalies) → prédiction → action automatique ou alerte préventive.
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card h-100 border-0 shadow-sm" style="border-left: 5px solid #7e22ce;">
+                <div class="card-body">
+                    <h4><i class="fas fa-chart-pie"></i> Détection d’anomalies</h4>
+                    <p>Identification de comportements inhabituels par rapport à une base normale. Utilisé pour la cybersécurité, la fraude, la détection de pannes naissantes.</p>
+                    <p class="text-muted small">Algorithmes : Isolation Forest, Auto-encoders, One-Class SVM.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card h-100 border-0 shadow-sm" style="border-left: 5px solid #7e22ce;">
+                <div class="card-body">
+                    <h4><i class="fas fa-random"></i> Classification / Régression</h4>
+                    <p>Prédiction d’une catégorie (ex: churn client, risque de panne) ou d’une valeur numérique (ex: durée de traitement).</p>
+                    <p class="text-muted small">Algorithmes : Random Forest, XGBoost, réseaux de neurones.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Questions clés pour un projet IA prédictive -->
+    <h4 class="mt-4"><i class="fas fa-question-circle me-2"></i> Questions clés avant de lancer un projet IA</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="bg-light p-3 rounded h-100">
+                <h5><i class="fas fa-database"></i> Données et contexte</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-angle-right text-primary"></i> Quelle est la question métier à résoudre ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Dispose-t-on de données historiques de qualité (volumineuses, labellisées) ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Les données sont-elles accessibles et fiables (data lake / warehouse) ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Quelle est la fréquence de mise à jour nécessaire (temps réel, batch) ?</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="bg-light p-3 rounded h-100">
+                <h5><i class="fas fa-cogs"></i> Modèle et industrialisation</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-angle-right text-primary"></i> Quelle métrique de performance du modèle (précision, rappel, F1) ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Comment intégrer la prédiction dans le workflow existant (alerte, action automatisée) ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Quels outils de MLOps pour déployer et surveiller le modèle ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Comment expliquer les prédictions aux utilisateurs métiers (IA explicable) ?</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checklist pour un projet IA réussi -->
+    <h4 class="mt-4"><i class="fas fa-check-double me-2"></i> Checklist : un projet IA prédictive prêt à l’emploi</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Le problème métier est clairement défini et justifie le recours à l’IA.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Les données sont disponibles, propres et historisées (minimum 12 mois).</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Une baseline (modèle simple) permet de comparer les performances.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Le modèle est testé sur un échantillon représentatif (validation croisée).</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> L’industrialisation (MLOps) est prévue (CI/CD, monitoring, retraining).</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Les prédictions sont intégrées dans un workflow d’action (alerte, ticket, scaling).</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Les utilisateurs métiers comprennent les limites du modèle (biais, faux positifs).</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Un plan de gouvernance des modèles (versioning, audit) est établi.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Retours d'expérience (REX) -->
+    <h4 class="mt-4"><i class="fas fa-chalkboard-user me-2"></i> Retours d’expérience : ce qui marche, ce qui tue l’IA prédictive</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card border-0 bg-light">
+                <div class="card-body">
+                    <h5><i class="fas fa-check-circle text-success"></i> Succès – Maintenance prédictive dans l’industrie</h5>
+                    <p>Un fabricant automobile a équipé ses machines de capteurs IoT (température, vibrations). Après 18 mois de collecte, un modèle de random forest prédit les pannes avec 85% de précision, 48h à l’avance. L’intégration dans le workflow de maintenance a permis de réduire les arrêts non planifiés de 40% et d’économiser 2M€ par an.</p>
+                    <p class="text-muted small">Leçon : la qualité des données et l’implication des métiers sont clés.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card border-0 bg-light">
+                <div class="card-body">
+                    <h5><i class="fas fa-times-circle text-danger"></i> Échec – Prédiction de churn sans action opérationnelle</h5>
+                    <p>Une entreprise de télécom a développé un modèle de prédiction du churn avec une excellente précision (AUC 0,92). Mais les résultats n’étaient pas intégrés dans le CRM ni dans les processus commerciaux. Les équipes terrain n’ont pas changé leurs comportements, et le churn n’a pas baissé. Le projet a été abandonné après 6 mois.</p>
+                    <p class="text-muted small">Leçon : une prédiction sans action est une prédiction inutile.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sagesse & bonnes pratiques -->
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <div class="card bg-warning bg-opacity-10 border-0">
+                <div class="card-body">
+                    <h5><i class="fas fa-gem text-warning me-2"></i> Sagesse & conseils d’experts</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Garbage in, garbage out. La qualité des données est la première priorité. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Un modèle simple et interprétable vaut souvent mieux qu’un modèle complexe. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « L’IA prédictive est un outil de pilotage, pas une boîte noire. Expliquez les résultats. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Commencez par un pilote sur un périmètre restreint avant d’industrialiser. »</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Mesurez le ROI : une prédiction qui ne génère pas de gain n’a pas de valeur. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Le retraining du modèle est indispensable : les données évoluent. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Associez les équipes métiers à la conception pour assurer l’adoption. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Privilégiez les modèles qui produisent des alertes actionnables, pas seulement des scores. »</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            <p>Exemple : "risque de panne serveur dans 6h" → déclencher un scaling préventif.</p>
         </div>
+    </div>
+
+    <!-- Top 5 exemples concrets d’IA prédictive -->
+    <h4 class="mt-4"><i class="fas fa-robot me-2"></i> Top 5 exemples concrets d’IA prédictive</h4>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-server text-primary"></i> IT – Prédiction de panne serveur</h5>
+                    <p><strong>Données :</strong> CPU, mémoire, disque, logs, métriques système (12 mois).<br>
+                    <strong>Modèle :</strong> Forêt aléatoire / LSTM sur séries temporelles.<br>
+                    <strong>Prédiction :</strong> Risque de panne dans les 6 prochaines heures.<br>
+                    <strong>Action :</strong> Migration automatique des charges, notification à l’équipe d’astreinte.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-chart-line text-warning"></i> Business – Prédiction du churn client</h5>
+                    <p><strong>Données :</strong> Historique d’achat, interactions support, usage produit, données démographiques.<br>
+                    <strong>Modèle :</strong> XGBoost (classification).<br>
+                    <strong>Prédiction :</strong> Score de risque de churn à 30 jours.<br>
+                    <strong>Action :</strong> Campagne de fidélisation ciblée (email, offre promotionnelle, appel conseiller).</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-industry text-secondary"></i> Industrie – Maintenance prédictive</h5>
+                    <p><strong>Données :</strong> Vibrations, température, pression, historique des pannes.<br>
+                    <strong>Modèle :</strong> Random Forest + analyse spectrale.<br>
+                    <strong>Prédiction :</strong> Probabilité de panne dans les 48h.<br>
+                    <strong>Action :</strong> Planification automatique d’une intervention de maintenance.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-chart-simple text-danger"></i> Cybersécurité – Détection d’intrusion</h5>
+                    <p><strong>Données :</strong> Logs réseau, accès utilisateurs, comportements anormaux.<br>
+                    <strong>Modèle :</strong> Isolation Forest (détection d’anomalies).<br>
+                    <strong>Prédiction :</strong> Tentative d’attaque en temps réel.<br>
+                    <strong>Action :</strong> Blocage IP, isolement du poste, alerte SOC.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-cloud-upload-alt text-info"></i> DevOps – Prédiction de surcharge cloud</h5>
+                    <p><strong>Données :</strong> Historique de charge, pics saisonniers, événements marketing.<br>
+                    <strong>Modèle :</strong> Prophet / ARIMA (séries temporelles).<br>
+                    <strong>Prédiction :</strong> Pics de charge à 24h.<br>
+                    <strong>Action :</strong> Scaling automatique préventif des ressources (Kubernetes HPA anticipé).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tips pour réussir son projet IA -->
+    <div class="alert alert-success mt-3">
+        <h5><i class="fas fa-thumbs-up me-2"></i> 5 conseils pour une IA prédictive qui transforme</h5>
+        <ol class="mb-0">
+            <li><strong>Commencez par un pilote métier simple</strong> – choisissez un cas où la donnée est disponible et l’impact mesurable.</li>
+            <li><strong>Investissez dans la qualité des données</strong> – nettoyez, historisez, et documentez vos sources.</li>
+            <li><strong>Associez les métiers dès le début</strong> – ils valident la pertinence des prédictions et s’approprient les résultats.</li>
+            <li><strong>Prévoyez le MLOps</strong> – le modèle doit être monitoré, retrain, et versionné comme n’importe quel code.</li>
+            <li><strong>Expliquez les prédictions</strong> – utilisez des outils d’IA explicable (SHAP, LIME) pour gagner la confiance.</li>
+        </ol>
+    </div>
+
+    <div class="text-center mt-4">
+        <p class="text-muted"><i class="fas fa-arrow-right"></i> L’IA prédictive couronne la chaîne de pilotage. L’étape suivante est la gouvernance, pour pérenniser l’ensemble.</p>
+        <a href="#" class="btn btn-outline-primary" onclick="event.preventDefault(); document.querySelector('#tab8-tab').click();"><i class="fas fa-building"></i> Passer à la gouvernance</a>
+    </div>
+</div>
+
+   
 
         <!-- 8. Gouvernance -->
-        <div class="tab-pane fade" id="tab8" role="tabpanel">
-            <h2><i class="fas fa-building me-2"></i> Gouvernance & Culture</h2>
-            <p>Structure et rôles pour pérenniser la démarche.</p>
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>Rôles clés</h5>
-                    <ul>
-                        <li><strong>Sponsor OKR</strong> : porte l’ambition, lève les obstacles.</li>
-                        <li><strong>Coach OKR</strong> : forme, facilite, garantit la méthode.</li>
-                        <li><strong>KPI Owner</strong> : responsable du suivi et des actions.</li>
-                        <li><strong>Comité KPI</strong> : valide, harmonise, supprime les indicateurs inutiles.</li>
+  
+<div class="tab-pane fade" id="tab8" role="tabpanel">
+    <h2><i class="fas fa-building me-2"></i> Gouvernance & Culture – Pérenniser le pilotage</h2>
+    <p class="lead">La gouvernance garantit que les KPI, OKR et alertes sont correctement définis, suivis et améliorés dans le temps. La culture data-driven est le terreau qui permet à ces outils de vivre et de transformer l’organisation. Ensemble, elles répondent à la question : <strong>« Comment faisons-nous pour que le pilotage devienne une pratique durable ? »</strong></p>
+    
+    <div class="alert alert-info">
+        <i class="fas fa-lightbulb me-2"></i> <strong>Principe fondamental :</strong> Sans gouvernance, les KPI deviennent du bruit. Sans culture, les outils restent décoratifs. La gouvernance structure, la culture donne du sens.
+    </div>
+
+    <!-- Les piliers de la gouvernance -->
+    <div class="row mt-4">
+        <div class="col-md-4 mb-3">
+            <div class="card h-100 border-0 shadow-sm" style="border-left: 5px solid #334155;">
+                <div class="card-body">
+                    <h4><i class="fas fa-users"></i> Rôles & responsabilités</h4>
+                    <ul class="list-unstyled">
+                        <li><strong>Sponsor :</strong> porte l’ambition, lève les obstacles.</li>
+                        <li><strong>Coach OKR :</strong> forme, facilite, garantit la méthode.</li>
+                        <li><strong>KPI Owner :</strong> responsable du suivi et des actions.</li>
+                        <li><strong>Comité KPI :</strong> valide, harmonise, supprime.</li>
+                        <li><strong>Data Steward :</strong> garant de la qualité des données.</li>
                     </ul>
                 </div>
-                <div class="col-md-6">
-                    <div class="bg-light p-3 rounded">
-                        <h6>📊 Maturité de gouvernance</h6>
-                        <ul>
-                            <li>🟥 Initial : KPI informels, pas de BI.</li>
-                            <li>🟠 Structuré : définitions standardisées.</li>
-                            <li>🟡 Opérationnel : dashboards actifs, alertes.</li>
-                            <li>🟢 Avancé : pilotage temps réel, amélioration continue.</li>
-                            <li>🚀 Intelligent : IA prédictive, optimisation automatique.</li>
-                        </ul>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card h-100 border-0 shadow-sm" style="border-left: 5px solid #334155;">
+                <div class="card-body">
+                    <h4><i class="fas fa-file-alt"></i> Processus & documentation</h4>
+                    <ul class="list-unstyled">
+                        <li>Fiche KPI standardisée (formule, source, seuils, action).</li>
+                        <li>Référentiel central des indicateurs.</li>
+                        <li>Processus de validation et de retrait des KPI.</li>
+                        <li>Cycle de revue annuel des OKR stratégiques.</li>
+                        <li>Runbooks d’alertes et procédures d’escalade.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card h-100 border-0 shadow-sm" style="border-left: 5px solid #334155;">
+                <div class="card-body">
+                    <h4><i class="fas fa-chart-line"></i> Culture & maturité</h4>
+                    <ul class="list-unstyled">
+                        <li>Décisions basées sur des données fiables.</li>
+                        <li>Transparence des OKR et des KPI.</li>
+                        <li>Acceptation de l’échec (stretch OKR).</li>
+                        <li>Amélioration continue (rétrospectives).</li>
+                        <li>Formation et montée en compétences.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Questions clés pour une gouvernance efficace -->
+    <h4 class="mt-4"><i class="fas fa-question-circle me-2"></i> Questions clés à se poser</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="bg-light p-3 rounded h-100">
+                <h5><i class="fas fa-tasks"></i> Organisation</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-angle-right text-primary"></i> Qui est responsable de chaque KPI (owner) ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Comment sont validés les nouveaux indicateurs ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Existe-t-il un comité de gouvernance KPI ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Les rôles (sponsor, coach, owner) sont-ils clairement définis ?</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="bg-light p-3 rounded h-100">
+                <h5><i class="fas fa-chart-simple"></i> Qualité & utilisation</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-angle-right text-primary"></i> Les données sont-elles fiables et traçables ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Les KPI sont-ils réellement utilisés dans les décisions ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Y a-t-il des indicateurs redondants ou inutilisés ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> La culture d’entreprise favorise-t-elle le droit à l’erreur ?</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checklist de gouvernance mature -->
+    <h4 class="mt-4"><i class="fas fa-check-double me-2"></i> Checklist : une gouvernance prête à l’emploi</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Un comité stratégique KPI (C-Level) existe et se réunit trimestriellement.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Un comité opérationnel KPI (métiers + data) valide les indicateurs.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Chaque KPI a une fiche standardisée (nom, formule, source, seuils, owner, action).</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Les OKR sont revus en fin de cycle avec rétrospective.</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Un référentiel central des indicateurs est accessible à tous.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Les données sources sont documentées et auditées (data catalog).</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Des formations aux OKR et KPI sont proposées régulièrement.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Une revue annuelle supprime les KPI inutilisés.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Retours d'expérience (REX) -->
+    <h4 class="mt-4"><i class="fas fa-chalkboard-user me-2"></i> Retours d’expérience : ce qui marche, ce qui tue la gouvernance</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card border-0 bg-light">
+                <div class="card-body">
+                    <h5><i class="fas fa-check-circle text-success"></i> Succès – Gouvernance centralisée dans un groupe bancaire</h5>
+                    <p>Un grand groupe a mis en place un référentiel unique de 120 KPI avec fiches standardisées, owners désignés et comité de validation mensuel. Les indicateurs redondants ont été supprimés, les définitions harmonisées. Résultat : les comités de direction passent de 3h de discussion sur les chiffres à 30 minutes de décision, car tout le monde parle le même langage.</p>
+                    <p class="text-muted small">Leçon : la standardisation et la gouvernance centralisée apportent efficacité et confiance.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card border-0 bg-light">
+                <div class="card-body">
+                    <h5><i class="fas fa-times-circle text-danger"></i> Échec – Absence de propriétaire et de revue</h5>
+                    <p>Une entreprise technologique avait des KPI définis il y a 5 ans, sans propriétaire, sans seuils. Personne ne savait ce qu’ils mesuraient ni comment agir. Les dashboards étaient remplis d’indicateurs « orphelins ». Les équipes les ignoraient, et la direction pilotait à l’intuition.</p>
+                    <p class="text-muted small">Leçon : sans propriétaire et sans revue, les KPI meurent.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sagesse & bonnes pratiques -->
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <div class="card bg-warning bg-opacity-10 border-0">
+                <div class="card-body">
+                    <h5><i class="fas fa-gem text-warning me-2"></i> Sagesse & conseils d’experts</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « La gouvernance n’est pas un contrôle, c’est un cadre de confiance. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Un KPI sans owner est un KPI orphelin. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « La culture data-driven se construit par l’exemple : les dirigeants doivent utiliser les données dans leurs décisions. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « La transparence des OKR favorise l’entraide, pas la compétition. »</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « La gouvernance doit être allégée : trop de règles tue la réactivité. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Formez les managers à la lecture et à l’utilisation des KPI. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Célébrez les succès et partagez les apprentissages des échecs. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « La maturité de gouvernance se mesure : évaluez votre score régulièrement. »</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- 9. Fil rouge – Projet complet -->
-        <div class="tab-pane fade" id="tab9" role="tabpanel">
-            <h2><i class="fas fa-project-diagram me-2"></i> Fil rouge : transformation de la logistique « EcoLogistics »</h2>
-            <p>Entreprise de livraison durable, 500 collaborateurs, 3 entrepôts, flotte de 200 véhicules électriques. Objectif : passer d’un pilotage réactif à un système prédictif intégré.</p>
-            
-            <div class="fil-rouge-timeline mt-4">
-                <div class="timeline-item">
-                    <div class="step-circle">1</div>
-                    <h5>Phase 1 – CAP & OKR stratégiques</h5>
-                    <p><strong>CAP :</strong> Devenir le leader français de la livraison urbaine zéro émission d’ici 2027, avec une expérience client temps réel.</p>
-                    <p><strong>OKR stratégiques (année N) :</strong><br>
-                    O1 : Fiabiliser l’expérience client omnicanale.<br>
-                    KR1 : Réduire les retards de livraison de 20% (de 12% à 9,6%).<br>
-                    KR2 : Augmenter le taux de satisfaction client (CSAT) à 88%.<br>
-                    O2 : Optimiser la maintenance des véhicules électriques.<br>
-                    KR3 : Réduire le MTTR des pannes flotte de 30% (de 4h à 2h48).</p>
+    <!-- Top 5 exemples concrets de gouvernance -->
+    <h4 class="mt-4"><i class="fas fa-crown me-2"></i> Top 5 exemples concrets de gouvernance & culture</h4>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-chart-line text-primary"></i> Comité KPI mensuel</h5>
+                    <p><strong>Objectif :</strong> Valider les nouveaux KPI, harmoniser les définitions, supprimer les indicateurs inutiles.<br>
+                    <strong>Participants :</strong> Responsables métiers, data owners, DSI.<br>
+                    <strong>Fréquence :</strong> Mensuelle.<br>
+                    <strong>Résultat :</strong> Réduction de 40% du nombre de KPI en 6 mois, meilleure fiabilité.</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="step-circle">2</div>
-                    <h5>Phase 2 – Définition des KPI & tableaux de bord</h5>
-                    <p><strong>KPI opérationnels :</strong><br>
-                    - Taux de livraison à l’heure (objectif 97%)<br>
-                    - Consommation énergétique moyenne par tournée (kWh)<br>
-                    - Temps de diagnostic panne (MTTD)<br>
-                    - Indice de confiance du conducteur (NPS interne)<br>
-                    - Données IoT : température batteries, kilométrage, alertes capteurs.</p>
-                    <p>Mise en place d’un data warehouse avec intégration des données ERP (SAP), CRM (Salesforce) et flotte IoT. Dashboards Power BI avec vues direction, opérations, maintenance.</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="step-circle">3</div>
-                    <h5>Phase 3 – Alertes & IA prédictive</h5>
-                    <p><strong>Alertes :</strong><br>
-                    - Critique : panne véhicule bloquant une tournée → SMS + dispatch d’un véhicule de secours.<br>
-                    - Warning : batterie < 20% ou détection d’anomalie de température → avertissement conducteur.<br>
-                    - Info : fin de tournée, retour à base.</p>
-                    <p><strong>IA prédictive :</strong> modèle de régression (Random Forest) sur données historiques de pannes pour anticiper les risques de panne à 48h. Déploiement d’un workflow d’alerte préventive : si risque > 70%, planifier une maintenance programmée.</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="step-circle">4</div>
-                    <h5>Phase 4 – Gouvernance & formation</h5>
-                    <p>Mise en place d’un comité de pilotage mensuel (DSI, Directeur logistique, Responsable maintenance). Création d’un référentiel central des KPI. Formation des équipes terrain à l’utilisation des dashboards et à l’interprétation des alertes. Célébration des premiers succès (baisse de 15% des retards après 6 mois).</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="step-circle">5</div>
-                    <h5>Résultats & amélioration continue</h5>
-                    <p>Après 12 mois : réduction de 25% des retards, MTTR flotte diminué de 35%, satisfaction client passée de 78% à 86%. L’IA prédictive a permis d’éviter 3 pannes majeures. Le modèle est étendu à l’optimisation des tournées (machine learning).</p>
-                </div>
-            </div>
-            <div class="alert alert-info mt-3">
-                <i class="fas fa-download"></i> <strong>Livrables du projet :</strong> CAP document, OKR stratégiques, référentiel KPI, dashboard Power BI, pipeline d’alertes, modèle ML de maintenance prédictive, runbooks, plan de formation.
             </div>
         </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-users text-success"></i> Communauté de pratique OKR</h5>
+                    <p><strong>Objectif :</strong> Partager les bonnes pratiques, co-construire des templates, former les nouvelles équipes.<br>
+                    <strong>Participants :</strong> Coachs OKR, managers volontaires, ambassadeurs.<br>
+                    <strong>Fréquence :</strong> Bimensuelle.<br>
+                    <strong>Résultat :</strong> Accélération du déploiement et montée en compétences.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-database text-info"></i> Data Catalog & référentiel KPI</h5>
+                    <p><strong>Objectif :</strong> Centraliser les définitions, les sources, les owners.<br>
+                    <strong>Outil :</strong> Data catalog (ex: Alation, Collibra) ou simple base partagée.<br>
+                    <strong>Bénéfice :</strong> Une seule version de la vérité, onboarding facilité.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-chalkboard-user text-warning"></i> Formation des managers au pilotage</h5>
+                    <p><strong>Objectif :</strong> Apprendre à définir des OKR, lire des dashboards, utiliser les alertes.<br>
+                    <strong>Format :</strong> Ateliers pratiques d’1 journée.<br>
+                    <strong>Résultat :</strong> Meilleure appropriation des outils, décisions plus rapides.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-chart-simple text-secondary"></i> Revue annuelle de maturité KPI</h5>
+                    <p><strong>Objectif :</strong> Évaluer chaque projet ou département sur une grille 0-100 (alignement, données, BI, alertes, gouvernance).<br>
+                    <strong>Action :</strong> Définir un plan d’amélioration pour les scores les plus faibles.<br>
+                    <strong>Résultat :</strong> Pilotage de la transformation et visibilité sur les progrès.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tips pour une gouvernance durable -->
+    <div class="alert alert-success mt-3">
+        <h5><i class="fas fa-thumbs-up me-2"></i> 5 conseils pour une gouvernance qui transforme</h5>
+        <ol class="mb-0">
+            <li><strong>Nommez des propriétaires (owners)</strong> – chaque KPI doit avoir un responsable qui suit et agit.</li>
+            <li><strong>Standardisez avec des fiches KPI</strong> – une base commune évite les interprétations divergentes.</li>
+            <li><strong>Créez un comité de validation léger</strong> – trop de validations tue l’agilité.</li>
+            <li><strong>Nettoyez régulièrement</strong> – supprimez les indicateurs inutilisés ou redondants.</li>
+            <li><strong>Formez et communiquez</strong> – la culture se construit par la répétition et l’exemple des dirigeants.</li>
+        </ol>
+    </div>
+
+    <div class="text-center mt-4">
+        <p class="text-muted"><i class="fas fa-arrow-right"></i> La gouvernance assure la pérennité. L’étape suivante est la mise en pratique avec un fil rouge concret.</p>
+        <a href="#" class="btn btn-outline-primary" onclick="event.preventDefault(); document.querySelector('#tab9-tab').click();"><i class="fas fa-project-diagram"></i> Découvrir le fil rouge (projet complet)</a>
+    </div>
+</div>
+
+
+        <!-- 9. Fil rouge – Projet complet -->
+<div class="tab-pane fade" id="tab9" role="tabpanel">
+    <h2><i class="fas fa-project-diagram me-2"></i> Fil rouge – Projet complet de transformation</h2>
+    <p class="lead">Ce cas pratique suit l’entreprise fictive <strong>EcoLogistics</strong>, spécialiste de la livraison urbaine durable, dans sa transformation vers un pilotage intégré (CAP → OKR → KPI → BI → Alertes → IA). Il illustre concrètement comment appliquer l’ensemble de la méthodologie.</p>
+    
+    <div class="alert alert-info">
+        <i class="fas fa-lightbulb me-2"></i> <strong>Objectif :</strong> Passer d’un pilotage réactif à un système prédictif, aligner IT et métier, et améliorer la performance opérationnelle tout en réduisant l’empreinte carbone.
+    </div>
+
+    <!-- Présentation de l’entreprise -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <div class="card bg-light border-0">
+                <div class="card-body">
+                    <h4><i class="fas fa-truck-fast"></i> Contexte : EcoLogistics</h4>
+                    <p><strong>Secteur :</strong> Logistique urbaine durable – 500 collaborateurs, 3 entrepôts, flotte de 200 véhicules électriques, 2 000 livraisons/jour.<br>
+                    <strong>Problème initial :</strong> Délais de livraison fluctuants, coûts de maintenance élevés, faible visibilité sur les incidents, silos entre IT, exploitation et maintenance, reporting manuel et réactif.<br>
+                    <strong>Ambition :</strong> Devenir le leader français de la livraison zéro émission d’ici 2027, avec une expérience client temps réel et une maintenance prédictive.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Timeline du projet -->
+    <h4 class="mt-4"><i class="fas fa-calendar-alt me-2"></i> Plan de déploiement (12 mois)</h4>
+    <div class="fil-rouge-timeline" style="border-left: 3px solid #e2e8f0; padding-left: 1.5rem;">
+        <div class="timeline-item mb-4" style="position: relative;">
+            <div style="position: absolute; left: -2.1rem; top: 0.25rem; width: 12px; height: 12px; background: #facc15; border-radius: 50%;"></div>
+            <h5><i class="fas fa-flag-checkered"></i> Phase 1 – CAP & OKR stratégiques (Mois 1-2)</h5>
+            <p><strong>Ateliers de co-construction :</strong> Réunions avec le Comex, la DSI, la direction logistique et les responsables maintenance.<br>
+            <strong>CAP défini :</strong><br>
+            • <strong>Course :</strong> Devenir le leader français de la livraison urbaine zéro émission d’ici 2027.<br>
+            • <strong>Alignment :</strong> IT, exploitation, maintenance et marketing partagent une feuille de route commune.<br>
+            • <strong>Purpose :</strong> Accélérer la transition énergétique et améliorer la qualité de vie en ville.<br>
+            <strong>OKR stratégiques (année N) :</strong><br>
+            O1 : Fiabiliser l’expérience client omnicanale.<br>
+            &nbsp;&nbsp;KR1 : Réduire les retards de livraison de 20% (de 12% à 9,6%).<br>
+            &nbsp;&nbsp;KR2 : Augmenter le taux de satisfaction client (CSAT) à 88%.<br>
+            O2 : Optimiser la maintenance des véhicules électriques.<br>
+            &nbsp;&nbsp;KR3 : Réduire le MTTR des pannes flotte de 30% (de 4h à 2h48).<br>
+            &nbsp;&nbsp;KR4 : Diminuer le coût de maintenance de 15%.</p>
+        </div>
+        <div class="timeline-item mb-4" style="position: relative;">
+            <div style="position: absolute; left: -2.1rem; top: 0.25rem; width: 12px; height: 12px; background: #facc15; border-radius: 50%;"></div>
+            <h5><i class="fas fa-chart-simple"></i> Phase 2 – KPI & data (Mois 3-4)</h5>
+            <p><strong>Identification des KPI candidats :</strong> ateliers métiers + analyse des sources existantes (ERP, capteurs IoT, CRM).<br>
+            <strong>Fiches KPI standardisées :</strong> chaque indicateur documenté (formule, source, fréquence, seuils, owner, action).<br>
+            <strong>Exemples de KPI :</strong><br>
+            • Taux de livraison à l’heure (source : GPS + ERP, seuil vert > 97%).<br>
+            • Consommation énergétique moyenne par tournée (kWh, seuil à définir).<br>
+            • Temps de diagnostic panne (MTTD) et temps de réparation (MTTR).<br>
+            • Indice de confiance conducteur (basé sur télémétrie).<br>
+            <strong>Mise en place du data warehouse :</strong> intégration des données ERP (SAP), CRM (Salesforce), flotte IoT, et logs d’application.</p>
+        </div>
+        <div class="timeline-item mb-4" style="position: relative;">
+            <div style="position: absolute; left: -2.1rem; top: 0.25rem; width: 12px; height: 12px; background: #facc15; border-radius: 50%;"></div>
+            <h5><i class="fas fa-chart-line"></i> Phase 3 – BI & dashboards (Mois 5-6)</h5>
+            <p><strong>Conception des dashboards :</strong><br>
+            • <strong>Vue CODIR :</strong> progression des OKR, satisfaction client, taux de disponibilité flotte, alertes critiques.<br>
+            • <strong>Vue opérationnelle :</strong> tableau de bord temps réel des tournées (cartes, retards, alertes), maintenance prédictive.<br>
+            • <strong>Vue maintenance :</strong> historique des pannes, MTTR par véhicule, coût de maintenance.<br>
+            <strong>Outil :</strong> Power BI avec actualisation toutes les 5 minutes pour les indicateurs critiques, quotidienne pour les agrégats.</p>
+        </div>
+        <div class="timeline-item mb-4" style="position: relative;">
+            <div style="position: absolute; left: -2.1rem; top: 0.25rem; width: 12px; height: 12px; background: #facc15; border-radius: 50%;"></div>
+            <h5><i class="fas fa-bell"></i> Phase 4 – Alertes & automatisation (Mois 7-8)</h5>
+            <p><strong>Seuils et règles :</strong><br>
+            • <strong>Critique :</strong> panne véhicule bloquant une tournée → SMS + dispatch d’un véhicule de secours (automatisé via API).<br>
+            • <strong>Warning :</strong> batterie < 20% ou anomalie de température moteur → notification conducteur et planification d’une charge.<br>
+            • <strong>Info :</strong> fin de tournée, déploiement réussi d’une nouvelle version applicative.<br>
+            <strong>Mise en place d’un moteur d’alertes :</strong> Prometheus + Alertmanager pour les métriques IT, et intégration des alertes métier via Azure Monitor. Runbooks documentés pour chaque type d’alerte.</p>
+        </div>
+        <div class="timeline-item mb-4" style="position: relative;">
+            <div style="position: absolute; left: -2.1rem; top: 0.25rem; width: 12px; height: 12px; background: #facc15; border-radius: 50%;"></div>
+            <h5><i class="fas fa-brain"></i> Phase 5 – IA prédictive (Mois 9-11)</h5>
+            <p><strong>Cas d’usage 1 :</strong> Prédiction de panne des véhicules électriques – modèle de classification (Random Forest) sur données de capteurs (température, kilométrage, usage) avec 48h de préavis. Précision 85%.<br>
+            <strong>Cas d’usage 2 :</strong> Prédiction de surcharge des entrepôts – modèle de séries temporelles (Prophet) sur le volume de commandes pour anticiper les pics et ajuster les effectifs.<br>
+            <strong>Intégration :</strong> Les prédictions alimentent un tableau de bord spécifique et déclenchent des alertes préventives (ex: « risque de panne sur véhicule X dans 48h » → planifier une intervention).</p>
+        </div>
+        <div class="timeline-item mb-4" style="position: relative;">
+            <div style="position: absolute; left: -2.1rem; top: 0.25rem; width: 12px; height: 12px; background: #facc15; border-radius: 50%;"></div>
+            <h5><i class="fas fa-building"></i> Phase 6 – Gouvernance & amélioration continue (Mois 12 et au-delà)</h5>
+            <p><strong>Mise en place d’un comité KPI trimestriel :</strong> revue des indicateurs, validation des nouveaux, suppression des inutilisés.<br>
+            <strong>Formation :</strong> tous les managers formés à la lecture des dashboards et à l’utilisation des alertes.<br>
+            <strong>Rétrospectives OKR :</strong> à chaque fin de cycle tactique (3 mois), bilan des apprentissages et ajustement des OKR pour le trimestre suivant.<br>
+            <strong>Communauté de pratique :</strong> échanges mensuels entre les équipes pour partager les bonnes pratiques et les difficultés.</p>
+        </div>
+    </div>
+
+    <!-- Résultats obtenus -->
+    <h4 class="mt-4"><i class="fas fa-chart-line me-2"></i> Résultats après 12 mois</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card border-0 bg-light">
+                <div class="card-body">
+                    <h5><i class="fas fa-check-circle text-success"></i> Indicateurs clés</h5>
+                    <ul>
+                        <li>Retards de livraison : <strong>-32%</strong> (objectif -20%)</li>
+                        <li>CSAT (satisfaction client) : <strong>+11 points</strong> (de 77% à 88%)</li>
+                        <li>MTTR flotte : <strong>-42%</strong> (de 4h à 2h20)</li>
+                        <li>Coût de maintenance : <strong>-18%</strong></li>
+                        <li>Économies annuelles : <strong>1,2 M€</strong></li>
+                        <li>Taux de déploiement réussi des mises à jour applicatives : <strong>99,5%</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card border-0 bg-light">
+                <div class="card-body">
+                    <h5><i class="fas fa-trophy text-warning"></i> Apprentissages & bonnes pratiques</h5>
+                    <ul>
+                        <li>La co-construction des OKR a été déterminante pour l’adhésion.</li>
+                        <li>La qualité des données IoT a nécessité un investissement initial (calibration des capteurs).</li>
+                        <li>L’automatisation des alertes a libéré du temps pour les équipes terrain.</li>
+                        <li>La gouvernance (comité KPI) a évité la prolifération d’indicateurs inutiles.</li>
+                        <li>L’IA prédictive a gagné en précision après 6 mois de retraining.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Questions clés pour reproduire ce projet -->
+    <h4 class="mt-4"><i class="fas fa-question-circle me-2"></i> Questions clés à se poser avant de lancer un projet similaire</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="bg-light p-3 rounded h-100">
+                <h5><i class="fas fa-flag-checkered"></i> Stratégie & organisation</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-angle-right text-primary"></i> Le CAP est-il clair et partagé par toutes les directions ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Un sponsor exécutif est-il identifié ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Les équipes sont-elles prêtes à co-construire les OKR ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Un budget et des ressources sont-ils alloués (data engineers, BI, coach) ?</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="bg-light p-3 rounded h-100">
+                <h5><i class="fas fa-database"></i> Données & technique</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-angle-right text-primary"></i> Les données nécessaires sont-elles disponibles et fiables ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Une architecture data (data lake / warehouse) est-elle en place ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> L’équipe a-t-elle les compétences en IA/ML ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Les outils BI et d’alerting sont-ils maîtrisés ?</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checklist pour un projet de transformation réussi -->
+    <h4 class="mt-4"><i class="fas fa-check-double me-2"></i> Checklist : les 10 points de succès</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> CAP formalisé et validé par le Comex.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> OKR stratégiques co-construits avec les équipes.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Fiches KPI standardisées et référentiel unique.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Data warehouse centralisé et automatisé.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Dashboards hiérarchisés (stratégique / opérationnel).</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Alertes calibrées avec runbooks et escalade.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Modèles IA entraînés sur données historiques fiables.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Gouvernance active (comité KPI, propriétaires).</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Formation des managers et des équipes.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Rétrospectives régulières et amélioration continue.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Sagesse & conseils d’experts -->
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <div class="card bg-warning bg-opacity-10 border-0">
+                <div class="card-body">
+                    <h5><i class="fas fa-gem text-warning me-2"></i> Sagesse & conseils d’experts (retour d’expérience terrain)</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Ne cherchez pas la perfection dès le premier cycle. Commencez petit, apprenez, itérez. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Impliquez les équipes terrain dès la définition des OKR : c’est eux qui les feront vivre. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Les données IoT nécessitent un nettoyage en amont ; prévoyez du temps pour la calibration. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « La communication des résultats (succès comme échecs) est aussi importante que la mesure. »</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Un projet de transformation doit avoir un sponsor exécutif qui participe activement. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Ne sous-estimez pas le besoin de formation continue : les outils évoluent, les compétences aussi. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Célébrez les victoires intermédiaires pour maintenir la motivation. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « La gouvernance doit être allégée : trop de comités tue la réactivité. »</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top 5 exemples concrets de projets similaires -->
+    <h4 class="mt-4"><i class="fas fa-lightbulb me-2"></i> Top 5 exemples concrets de projets de pilotage intégré</h4>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-truck-fast text-primary"></i> Logistique urbaine</h5>
+                    <p><strong>Projet :</strong> Transformation d’une flotte de livraison avec IoT, maintenance prédictive et pilotage temps réel.<br>
+                    <strong>Gains :</strong> -35% de pannes, +20% de ponctualité, économie de 2M€/an.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-chart-line text-success"></i> Banque – réduction du churn</h5>
+                    <p><strong>Projet :</strong> Modèle de prédiction du churn intégré au CRM, campagnes automatisées.<br>
+                    <strong>Gains :</strong> Réduction du churn de 15% en 12 mois, ROI > 300%.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-cloud-upload-alt text-info"></i> DSI – observabilité & SRE</h5>
+                    <p><strong>Projet :</strong> Mise en place de SLI/SLO, dashboards temps réel, alertes basées sur les burn rates.<br>
+                    <strong>Gains :</strong> MTTR réduit de 60%, disponibilité passée à 99,95%.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-industry text-secondary"></i> Industrie – maintenance prédictive</h5>
+                    <p><strong>Projet :</strong> Capteurs sur machines-outils, modèle de random forest, intégration dans la planification.<br>
+                    <strong>Gains :</strong> Réduction des arrêts non planifiés de 45%, économie de 1,5M€/an.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-store text-warning"></i> Retail – optimisation des stocks</h5>
+                    <p><strong>Projet :</strong> Prévision des ventes par IA, réapprovisionnement automatique, KPI de rupture.<br>
+                    <strong>Gains :</strong> Réduction des ruptures de 70%, baisse des stocks dormants de 25%.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tips pour réussir votre propre projet -->
+    <div class="alert alert-success mt-3">
+        <h5><i class="fas fa-thumbs-up me-2"></i> 5 conseils pour réussir votre transformation</h5>
+        <ol class="mb-0">
+            <li><strong>Commencez par un pilote</strong> – choisissez une équipe motivée et un périmètre maîtrisé.</li>
+            <li><strong>Investissez dans la qualité des données</strong> – sans données fiables, aucun outil ne tiendra.</li>
+            <li><strong>Associez les métiers dès le début</strong> – la co-construction est le gage de l’adoption.</li>
+            <li><strong>Planifiez des revues régulières</strong> – hebdomadaires pour les alertes, mensuelles pour les OKR, trimestrielles pour la gouvernance.</li>
+            <li><strong>Valorisez les apprentissages</strong> – même les échecs sont des sources de progrès.</li>
+        </ol>
+    </div>
+
+    <div class="text-center mt-4">
+        <p class="text-muted"><i class="fas fa-arrow-right"></i> Ce fil rouge vous a montré comment appliquer concrètement la méthodologie. L’étape suivante vous donne les ressources pour vous former et approfondir.</p>
+        <a href="#" class="btn btn-outline-primary" onclick="event.preventDefault(); document.querySelector('#tab10-tab').click();"><i class="fas fa-graduation-cap"></i> Accéder aux ressources formation</a>
+    </div>
+</div>
+
 
         <!-- 10. Formation & Ressources -->
         <div class="tab-pane fade" id="tab10" role="tabpanel">
@@ -547,4 +2219,4 @@ Le code est prêt à être copié dans un fichier `.html` et ouvert dans un navi
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-```
+
