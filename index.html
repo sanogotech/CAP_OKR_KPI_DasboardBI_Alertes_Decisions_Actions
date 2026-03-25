@@ -158,7 +158,14 @@
         <li class="nav-item" role="presentation"><button class="nav-link" id="tab8-tab" data-bs-toggle="tab" data-bs-target="#tab8" type="button" role="tab">8. Gouvernance</button></li>
         <li class="nav-item" role="presentation"><button class="nav-link" id="tab9-tab" data-bs-toggle="tab" data-bs-target="#tab9" type="button" role="tab">9. Fil rouge (projet)</button></li>
         <li class="nav-item" role="presentation"><button class="nav-link" id="tab10-tab" data-bs-toggle="tab" data-bs-target="#tab10" type="button" role="tab">10. Formation & Ressources</button></li>
-    </ul>
+    
+		<li class="nav-item" role="presentation">
+    <button class="nav-link" id="tab11-tab" data-bs-toggle="tab" data-bs-target="#tab11" type="button" role="tab">
+        <i class="fas fa-question-circle"></i> 40 questions & tips
+    </button>
+</li>
+	
+	</ul>
 
     <div class="tab-content" id="myTabContent">
         <!-- 1. Introduction -->
@@ -2164,48 +2171,549 @@
 
 
         <!-- 10. Formation & Ressources -->
-        <div class="tab-pane fade" id="tab10" role="tabpanel">
-            <h2><i class="fas fa-graduation-cap me-2"></i> Formation & Ressources</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>📚 Modules de formation recommandés</h5>
-                    <ul>
-                        <li><i class="fas fa-check-circle text-success"></i> Atelier CAP : définir la vision (4h)</li>
-                        <li><i class="fas fa-check-circle text-success"></i> Atelier OKR : co-construire objectifs et KR (1 journée)</li>
-                        <li><i class="fas fa-check-circle text-success"></i> Définition de KPI actionnables (demi-journée)</li>
-                        <li><i class="fas fa-check-circle text-success"></i> Conception de dashboards BI (2 jours)</li>
-                        <li><i class="fas fa-check-circle text-success"></i> Mise en place d’alertes et runbooks (1 journée)</li>
-                        <li><i class="fas fa-check-circle text-success"></i> Introduction à l’IA prédictive pour managers (1 journée)</li>
-                        <li><i class="fas fa-check-circle text-success"></i> Gouvernance et culture data-driven (demi-journée)</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h5>📖 Ressources</h5>
-                    <ul>
-                        <li><a href="#">Modèle Excel de fiche KPI (télécharger)</a></li>
-                        <li><a href="#">Grille de maturité KPI (score 0-100)</a></li>
-                        <li><a href="#">Checklist audit OKR</a></li>
-                        <li><a href="#">Template de runbook d’alerte</a></li>
-                        <li><a href="#">Bibliothèque de 100+ KPI prêts à l’emploi</a></li>
-                    </ul>
-                    <div class="mt-3 p-3 bg-light rounded">
-                        <strong><i class="fab fa-youtube"></i> Vidéos recommandées :</strong><br>
-                        • "Introduction aux OKR" (John Doerr)<br>
-                        • "Mesurer ce qui compte" – conférence OCTO<br>
-                        • "Observabilité et IA" – KubeCon
-                    </div>
-                </div>
-            </div>
-            <div class="mt-4">
-                <h5>📅 Plan de déploiement type (12 semaines)</h5>
-                <div class="progress mb-2" style="height: 25px;">
-                    <div class="progress-bar bg-primary" style="width: 25%">Sem 1-3 : CAP + OKR</div>
-                    <div class="progress-bar bg-info" style="width: 25%">Sem 4-6 : KPI + Data</div>
-                    <div class="progress-bar bg-warning" style="width: 25%">Sem 7-9 : BI + Alertes</div>
-                    <div class="progress-bar bg-success" style="width: 25%">Sem 10-12 : IA + Gouvernance</div>
+
+<div class="tab-pane fade" id="tab10" role="tabpanel">
+    <h2><i class="fas fa-graduation-cap me-2"></i> Formation & Ressources – Passer à l’action</h2>
+    <p class="lead">La transformation vers un pilotage intégré ne se décrète pas : elle s’apprend et se cultive. Cette section vous propose des parcours de formation, des ressources concrètes, des retours d’expérience et des outils pour former vos équipes et ancrer durablement la culture data-driven.</p>
+    
+    <div class="alert alert-info">
+        <i class="fas fa-lightbulb me-2"></i> <strong>Principe fondamental :</strong> Former, c’est investir. Les compétences en pilotage (OKR, KPI, BI, IA) sont devenues aussi stratégiques que les compétences techniques.
+    </div>
+
+    <!-- Parcours de formation recommandés -->
+    <h4 class="mt-4"><i class="fas fa-road me-2"></i> Parcours de formation – 3 niveaux</h4>
+    <div class="row">
+        <div class="col-md-4 mb-3">
+            <div class="card h-100 border-0 shadow-sm" style="border-left: 5px solid #10b981;">
+                <div class="card-body">
+                    <h5><i class="fas fa-seedling"></i> Niveau 1 – Fondamentaux</h5>
+                    <p><strong>Public :</strong> Tous collaborateurs, managers opérationnels.<br>
+                    <strong>Objectif :</strong> Comprendre la chaîne CAP → OKR → KPI → BI → Alertes → IA.<br>
+                    <strong>Contenu :</strong><br>
+                    • Atelier CAP (4h) – définir une vision partagée.<br>
+                    • Initiation OKR (1 jour) – objectifs et key results.<br>
+                    • KPI actionnables (demi-journée) – fiches, seuils, actions.<br>
+                    • Découverte BI (demi-journée) – lire un dashboard.</p>
                 </div>
             </div>
         </div>
+        <div class="col-md-4 mb-3">
+            <div class="card h-100 border-0 shadow-sm" style="border-left: 5px solid #f59e0b;">
+                <div class="card-body">
+                    <h5><i class="fas fa-chart-line"></i> Niveau 2 – Piloter</h5>
+                    <p><strong>Public :</strong> Managers, chefs de projet, product owners, data analysts.<br>
+                    <strong>Objectif :</strong> Maîtriser la construction et le suivi des OKR/KPI, concevoir des dashboards.<br>
+                    <strong>Contenu :</strong><br>
+                    • Atelier OKR avancé (2 jours) – stretch, alignement, revues.<br>
+                    • Concevoir des KPI impactants (1 jour) – analyse de la donnée, seuils.<br>
+                    • Formation Power BI / Tableau (2 jours) – modélisation, storytelling.<br>
+                    • Mise en place d’alertes (demi-journée) – runbooks, escalade.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card h-100 border-0 shadow-sm" style="border-left: 5px solid #7e22ce;">
+                <div class="card-body">
+                    <h5><i class="fas fa-brain"></i> Niveau 3 – Anticiper & industrialiser</h5>
+                    <p><strong>Public :</strong> Data scientists, architectes, DSI, CODIR.<br>
+                    <strong>Objectif :</strong> Déployer l’IA prédictive, industrialiser la gouvernance.<br>
+                    <strong>Contenu :</strong><br>
+                    • Introduction au machine learning pour managers (1 jour).<br>
+                    • MLOps & industrialisation (2 jours).<br>
+                    • Gouvernance des données & KPI (1 jour).<br>
+                    • Atelier « Game Day » – simulation d’incidents et alertes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Questions clés pour bâtir un plan de formation -->
+    <h4 class="mt-4"><i class="fas fa-question-circle me-2"></i> Questions clés pour construire votre plan de formation</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="bg-light p-3 rounded h-100">
+                <h5><i class="fas fa-users"></i> Cible & besoins</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-angle-right text-primary"></i> Quels sont les rôles à former (dirigeants, managers, équipes) ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Quel est le niveau actuel de maturité (évaluez avec la grille de scoring) ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Quels sont les freins identifiés (culture, compétences, outils) ?</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="bg-light p-3 rounded h-100">
+                <h5><i class="fas fa-chalkboard"></i> Modalités & ressources</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-angle-right text-primary"></i> Faut-il un formateur interne ou externe (coach OKR, expert BI) ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Quels formats (ateliers, e-learning, coaching terrain) ?</li>
+                    <li><i class="fas fa-angle-right text-primary"></i> Comment mesurer l’efficacité de la formation (évaluation à chaud et à froid) ?</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checklist pour un programme de formation réussi -->
+    <h4 class="mt-4"><i class="fas fa-check-double me-2"></i> Checklist : un programme de formation efficace</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Un plan de formation sur 12 mois, avec des sessions régulières.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Des ateliers pratiques basés sur des cas réels (pas de théorie uniquement).</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Un accompagnement post-formation (coaching, communauté de pratique).</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Des supports accessibles (fiches KPI, templates OKR, runbooks).</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Une évaluation des acquis (quiz, mise en situation).</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> L’implication des dirigeants comme sponsors et participants.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Un budget dédié et des ressources dégagées dans le temps de travail.</li>
+                <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Un partage des retours d’expérience entre équipes.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Retours d'expérience (REX) formation -->
+    <h4 class="mt-4"><i class="fas fa-chalkboard-user me-2"></i> Retours d’expérience – Ce qui marche, ce qui ne marche pas</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card border-0 bg-light">
+                <div class="card-body">
+                    <h5><i class="fas fa-check-circle text-success"></i> Succès – Formation par ateliers et communauté de pratique</h5>
+                    <p>Une entreprise du CAC40 a lancé un programme de formation aux OKR sur 6 mois : 2 jours d’atelier pour chaque équipe, suivi d’un coaching mensuel et d’une communauté de pratique. Résultat : 80% des équipes utilisent les OKR un an après, le taux de réalisation des objectifs a augmenté de 25%.</p>
+                    <p class="text-muted small">Leçon : la formation seule ne suffit pas ; le coaching et la communauté sont clés.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card border-0 bg-light">
+                <div class="card-body">
+                    <h5><i class="fas fa-times-circle text-danger"></i> Échec – Formation « one shot » sans suivi</h5>
+                    <p>Une DSI a organisé une journée de formation aux KPI pour 200 personnes, sans exercices pratiques ni suivi. 3 mois après, personne ne se souvenait des concepts. Les anciens réflexes sont revenus. Le budget a été gaspillé.</p>
+                    <p class="text-muted small">Leçon : la formation doit être répétée, appliquée, et intégrée dans le quotidien.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sagesse & bonnes pratiques formation -->
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <div class="card bg-warning bg-opacity-10 border-0">
+                <div class="card-body">
+                    <h5><i class="fas fa-gem text-warning me-2"></i> Sagesse & conseils d’experts en formation</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Apprendre en faisant : les ateliers sur des cas réels sont 3 fois plus efficaces que la théorie seule. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Formez d’abord les managers, ils seront ensuite les ambassadeurs. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Utilisez des templates et des fiches prêtes à l’emploi pour faciliter l’adoption. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Mesurez le ROI de la formation : réduction du temps de reporting, gain de temps en réunion. »</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « La formation ne s’arrête jamais : créez des rituels de partage (communauté, revues). »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Associez la formation à des objectifs concrets : après la formation, chaque équipe doit livrer un OKR. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Variez les formats : e-learning pour les bases, ateliers pour la pratique, coaching pour l’ancrage. »</li>
+                                <li><i class="fas fa-quote-left text-muted me-2"></i> « Impliquez la direction : si le CODIR ne pratique pas, les équipes ne suivront pas. »</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top 5 ressources concrètes à télécharger / utiliser -->
+    <h4 class="mt-4"><i class="fas fa-download me-2"></i> Top 5 ressources prêtes à l’emploi</h4>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-file-excel text-success"></i> Template Excel – Fiche KPI standard</h5>
+                    <p>Un fichier Excel avec toutes les colonnes : nom, description, formule, source, fréquence, seuils, owner, action. À remplir pour chaque indicateur.</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary" onclick="alert('Téléchargement simulé – dans un vrai portail, ce lien pointerait vers le fichier')"><i class="fas fa-download"></i> Télécharger</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-chalkboard"></i> Grille de maturité KPI (score 0-100)</h5>
+                    <p>Auto-évaluation par domaine : alignement, qualité des données, BI, alertes, gouvernance. Permet de prioriser les actions d’amélioration.</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary" onclick="alert('Téléchargement simulé – grille de maturité')"><i class="fas fa-download"></i> Télécharger</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-bullseye"></i> Template OKR – Fiche objectif + KR</h5>
+                    <p>Modèle pour documenter chaque OKR : objectif (qualitatif), key results (quantitatifs), data 0, data cible, propriétaire, initiatives.</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary" onclick="alert('Téléchargement simulé – template OKR')"><i class="fas fa-download"></i> Télécharger</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-bell"></i> Runbook d’alerte type</h5>
+                    <p>Document décrivant pour chaque alerte : déclencheur, canal, action à mener, escalade, contacts. Exemple concret pour une alerte « CPU > 85% ».</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary" onclick="alert('Téléchargement simulé – runbook alerte')"><i class="fas fa-download"></i> Télécharger</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Livres, articles, MOOCs -->
+    <h4 class="mt-4"><i class="fas fa-book-open me-2"></i> Bibliothèque & ressources recommandées</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-book"></i> Ouvrages clés</h5>
+                    <ul>
+                        <li><strong>Mesurez ce qui compte</strong> – John Doerr (OKR)</li>
+                        <li><strong>La boîte à outils de la méthode OKR</strong> – Laurent Morisseau</li>
+                        <li><strong>Radical Focus</strong> – Christina Wodtke</li>
+                        <li><strong>Storytelling with Data</strong> – Cole Nussbaumer Knaflic (BI)</li>
+                        <li><strong>The Site Reliability Workbook</strong> – Google (alertes, SLO)</li>
+                        <li><strong>Machine Learning Engineering</strong> – Andriy Burkov (IA prédictive)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                    <h5><i class="fas fa-globe"></i> MOOCs & formations en ligne</h5>
+                    <ul>
+                        <li><a href="#" onclick="alert('Lien vers Coursera')">Coursera – OKR : Objectives and Key Results</a> (Google)</li>
+                        <li><a href="#" onclick="alert('Lien vers Microsoft Learn')">Microsoft Learn – Power BI pour décideurs</a></li>
+                        <li><a href="#" onclick="alert('Lien vers DataCamp')">DataCamp – Introduction à la BI et aux dashboards</a></li>
+                        <li><a href="#" onclick="alert('Lien vers Fast.ai')">Fast.ai – Machine Learning pour praticiens</a></li>
+                        <li><a href="#" onclick="alert('Lien vers OCTO Publications')">OCTO Technology – Livres blancs OKR & pilotage</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Outils & plateformes -->
+    <h4 class="mt-4"><i class="fas fa-tools me-2"></i> Outils recommandés</h4>
+    <div class="row">
+        <div class="col-md-3 text-center mb-3">
+            <div class="card border-0 shadow-sm p-2">
+                <i class="fab fa-microsoft fa-3x text-primary"></i>
+                <p class="mt-2"><strong>Power BI</strong><br>Dashboards</p>
+            </div>
+        </div>
+        <div class="col-md-3 text-center mb-3">
+            <div class="card border-0 shadow-sm p-2">
+                <i class="fas fa-chart-line fa-3x text-info"></i>
+                <p class="mt-2"><strong>Tableau</strong><br>Visualisation</p>
+            </div>
+        </div>
+        <div class="col-md-3 text-center mb-3">
+            <div class="card border-0 shadow-sm p-2">
+                <i class="fas fa-bell fa-3x text-warning"></i>
+                <p class="mt-2"><strong>PagerDuty</strong><br>Alerting</p>
+            </div>
+        </div>
+        <div class="col-md-3 text-center mb-3">
+            <div class="card border-0 shadow-sm p-2">
+                <i class="fas fa-brain fa-3x text-purple"></i>
+                <p class="mt-2"><strong>Dataiku / Databricks</strong><br>IA/ML</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tips pour ancrer la culture -->
+    <div class="alert alert-success mt-3">
+        <h5><i class="fas fa-thumbs-up me-2"></i> 5 conseils pour ancrer durablement la culture du pilotage</h5>
+        <ol class="mb-0">
+            <li><strong>Faites du pilotage un réflexe quotidien</strong> – intégrez les OKR dans les rituels d’équipe (daily, revues).</li>
+            <li><strong>Créez des communautés de pratique</strong> – les ambassadeurs partagent leurs succès et difficultés.</li>
+            <li><strong>Valorisez les apprentissages</strong> – même les OKR non atteints sont source de leçons.</li>
+            <li><strong>Associez la reconnaissance aux comportements data-driven</strong> – pas seulement aux résultats.</li>
+            <li><strong>Évaluez régulièrement la maturité</strong> – utilisez la grille de scoring pour mesurer les progrès.</li>
+        </ol>
+    </div>
+
+    <div class="text-center mt-4">
+        <p class="text-muted"><i class="fas fa-arrow-right"></i> La formation et les ressources sont le carburant de votre transformation. Utilisez ces éléments pour passer à l’action dès maintenant.</p>
+        <a href="#" class="btn btn-outline-primary" onclick="event.preventDefault(); document.querySelector('#tab1-tab').click();"><i class="fas fa-compass"></i> Retour à l’introduction</a>
+    </div>
+</div>
+
+<div class="tab-pane fade" id="tab11" role="tabpanel">
+    <h2><i class="fas fa-question-circle me-2"></i> 40 questions end‑to‑end & recommandations</h2>
+    <p class="lead">Ces questions couvrent toute la chaîne de pilotage : de la vision stratégique à l’IA prédictive, en passant par les OKR, KPI, BI, alertes et gouvernance. Utilisez-les pour auditer votre système, former vos équipes ou préparer vos ateliers.</p>
+
+    <!-- Accordéon pour regrouper par catégorie -->
+    <div class="accordion" id="questionsAccordion">
+        <!-- CATÉGORIE CAP -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingCap">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCap" aria-expanded="true" aria-controls="collapseCap">
+                    <strong><i class="fas fa-flag-checkered me-2"></i> CAP – Direction stratégique (5 questions)</strong>
+                </button>
+            </h2>
+            <div id="collapseCap" class="accordion-collapse collapse show" data-bs-parent="#questionsAccordion">
+                <div class="accordion-body">
+                    <ol>
+                        <li><strong>Notre CAP est‑il formulé en une phrase claire, comprise par tous ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Testez-le en demandant à 5 managers de le reformuler – si les versions divergent, retravaillez la clarté.</span>
+                        </li>
+                        <li><strong>Avons‑nous explicitement défini les trois dimensions : Course (direction), Alignment (alignement), Purpose (sens) ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Documentez chaque dimension séparément pour éviter les confusions.</span>
+                        </li>
+                        <li><strong>Le CAP a‑t‑il été co‑construit avec les directions métiers, IT et opérations ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Organisez un atelier d’une demi-journée avec les responsables de chaque pôle pour valider l’alignement.</span>
+                        </li>
+                        <li><strong>Le CAP est‑il diffusé et affiché (intranet, réunions, one‑pager) ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Créez un visuel simple avec les trois dimensions et placez-le dans les espaces communs.</span>
+                        </li>
+                        <li><strong>Un processus de révision annuelle est‑il prévu pour adapter le CAP si le marché évolue ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Inscrivez une session de « stratégie » dans le calendrier annuel, même si la vision ne change pas.</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATÉGORIE OKR -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOkr">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOkr" aria-expanded="false" aria-controls="collapseOkr">
+                    <strong><i class="fas fa-bullseye me-2"></i> OKR – Objectifs & Key Results (6 questions)</strong>
+                </button>
+            </h2>
+            <div id="collapseOkr" class="accordion-collapse collapse" data-bs-parent="#questionsAccordion">
+                <div class="accordion-body">
+                    <ol start="6">
+                        <li><strong>Chaque objectif est‑il qualitatif, inspirant, et limité à 2‑5 key results ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Formulez l’objectif avec un verbe d’action et un qualificatif (ex : « Offrir une expérience client omnicanale fluide »).</span>
+                        </li>
+                        <li><strong>Les key results sont‑ils quantitatifs, mesurables et orientés outcome (résultat) plutôt qu’output (activité) ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Transformez une tâche en KR en demandant : « Quel changement voulons‑nous observer chez l’utilisateur ? »</span>
+                        </li>
+                        <li><strong>Les OKR ont‑ils été co‑construits avec les équipes (pas imposés) ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Animez des ateliers où chaque équipe propose ses KR, puis discute de l’alignement avec la stratégie.</span>
+                        </li>
+                        <li><strong>Un cycle tactique (3‑4 mois) est‑il défini, avec des revues hebdomadaires et une rétrospective de fin de cycle ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Planifiez les check‑ins dans les agendas d’équipe (15 minutes) pour ne pas les oublier.</span>
+                        </li>
+                        <li><strong>Les OKR sont‑ils partagés de manière transparente dans toute l’organisation ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Utilisez un outil partagé (Excel, Notion, WorkBoard) pour que chacun puisse consulter les objectifs des autres.</span>
+                        </li>
+                        <li><strong>Les OKR sont‑ils découplés de la rémunération individuelle ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Expliquez clairement que l’échec d’un KR ambitieux est une source d’apprentissage, pas une sanction.</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATÉGORIE KPI -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingKpi">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKpi" aria-expanded="false" aria-controls="collapseKpi">
+                    <strong><i class="fas fa-chart-simple me-2"></i> KPI – Mesure opérationnelle (6 questions)</strong>
+                </button>
+            </h2>
+            <div id="collapseKpi" class="accordion-collapse collapse" data-bs-parent="#questionsAccordion">
+                <div class="accordion-body">
+                    <ol start="12">
+                        <li><strong>Chaque KPI est‑il aligné sur un OKR ou un objectif stratégique ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Si un indicateur n’a pas de lien avec la stratégie, supprimez‑le ou déplacez‑le en « indicateur de suivi ».</span>
+                        </li>
+                        <li><strong>La formule du KPI est‑elle claire, automatisable et basée sur une source unique de vérité ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Documentez la source de données et le calcul pour éviter les interprétations divergentes.</span>
+                        </li>
+                        <li><strong>Des seuils (vert/orange/rouge) sont‑ils définis, avec une action associée pour chaque niveau ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Évitez les seuils trop sensibles qui génèrent du bruit ; basez‑vous sur des percentiles (p95, p99).</span>
+                        </li>
+                        <li><strong>Un propriétaire (owner) est‑il désigné pour suivre le KPI et déclencher les actions ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Le propriétaire peut être métier ou technique selon l’indicateur – nommez‑le clairement dans la fiche.</span>
+                        </li>
+                        <li><strong>Les KPI sont‑ils revus périodiquement (au moins annuellement) pour supprimer ceux qui ne sont plus utiles ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Organisez un « nettoyage de printemps » des indicateurs pour alléger les tableaux de bord.</span>
+                        </li>
+                        <li><strong>La donnée est‑elle accessible en temps réel ou à une fréquence adaptée à la décision ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Pour la supervision IT, privilégiez le temps réel ; pour les indicateurs de stratégie, un délai mensuel peut suffire.</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATÉGORIE BI & DASHBOARDS -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingBi">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBi" aria-expanded="false" aria-controls="collapseBi">
+                    <strong><i class="fas fa-chart-line me-2"></i> BI & Dashboards (5 questions)</strong>
+                </button>
+            </h2>
+            <div id="collapseBi" class="accordion-collapse collapse" data-bs-parent="#questionsAccordion">
+                <div class="accordion-body">
+                    <ol start="18">
+                        <li><strong>Le dashboard permet‑il de prendre une décision en moins de 30 secondes ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Appliquez la règle des 7±2 : limitez les indicateurs à 7-10 maximum par écran.</span>
+                        </li>
+                        <li><strong>Les trois couches sont‑elles présentes : stratégique (CAP/OKR), tactique (progression), opérationnelle (KPI détaillés) ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Concevez un dashboard par public (CODIR, managers, équipes) avec des vues adaptées.</span>
+                        </li>
+                        <li><strong>Les alertes sont‑elles intégrées visuellement (couleurs, icônes) en haut du dashboard ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Utilisez le rouge uniquement pour ce qui nécessite une action immédiate.</span>
+                        </li>
+                        <li><strong>Le drill‑down (navigation vers les détails) est‑il disponible pour investiguer les écarts ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Permettez de cliquer sur un indicateur pour voir la distribution par région, service, etc.</span>
+                        </li>
+                        <li><strong>Les données sont‑elles actualisées à la fréquence annoncée, avec des métadonnées (date de rafraîchissement) visibles ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Ajoutez un petit texte « Données du 25/03 » pour éviter toute confusion.</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATÉGORIE ALERTES -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingAlertes">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAlertes" aria-expanded="false" aria-controls="collapseAlertes">
+                    <strong><i class="fas fa-bell me-2"></i> Alertes & Détection (5 questions)</strong>
+                </button>
+            </h2>
+            <div id="collapseAlertes" class="accordion-collapse collapse" data-bs-parent="#questionsAccordion">
+                <div class="accordion-body">
+                    <ol start="23">
+                        <li><strong>Les alertes sont‑elles hiérarchisées (critique / warning / info) avec des canaux distincts ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Réservez le SMS + appel aux alertes critiques ; utilisez Teams/Slack pour les warnings et emails pour les infos.</span>
+                        </li>
+                        <li><strong>Chaque alerte critique dispose‑t‑elle d’un runbook documentant les actions à mener ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Testez le runbook en simulation (game day) au moins deux fois par an.</span>
+                        </li>
+                        <li><strong>Les seuils sont‑ils calibrés pour éviter les faux positifs (fatigue d’alerte) ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Utilisez des seuils dynamiques (basés sur les tendances) plutôt que des valeurs fixes.</span>
+                        </li>
+                        <li><strong>Un mécanisme d’escalade automatique existe‑t‑il si le premier intervenant ne répond pas ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Définissez des chaînes d’escalade avec des délais (ex : après 5 min, appeler le manager).</span>
+                        </li>
+                        <li><strong>Les alertes sont‑elles dédupliquées pour éviter les notifications en rafale ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Configurez des règles de regroupement (ex : une seule alerte par incident, mise à jour périodique).</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATÉGORIE IA PRÉDICTIVE -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingIa">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIa" aria-expanded="false" aria-controls="collapseIa">
+                    <strong><i class="fas fa-brain me-2"></i> IA Prédictive (5 questions)</strong>
+                </button>
+            </h2>
+            <div id="collapseIa" class="accordion-collapse collapse" data-bs-parent="#questionsAccordion">
+                <div class="accordion-body">
+                    <ol start="28">
+                        <li><strong>Le problème métier justifie‑t‑il réellement le recours à l’IA (vs une règle simple) ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Commencez par une baseline avec des règles métier ou un modèle simple (régression logistique).</span>
+                        </li>
+                        <li><strong>Disposons‑nous de données historiques de qualité (volume, propreté, label) pour entraîner le modèle ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Investissez dans un data lake ou un data warehouse avant de lancer des projets IA.</span>
+                        </li>
+                        <li><strong>Le modèle est‑il interprétable (SHAP, LIME) pour expliquer les prédictions aux utilisateurs métiers ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Sans explicabilité, les équipes terrain n’adopteront pas la solution.</span>
+                        </li>
+                        <li><strong>Les prédictions sont‑elles intégrées dans un workflow d’action (alerte, ticket, scaling automatique) ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Une prédiction sans action est inutile – prévoyez toujours un déclencheur.</span>
+                        </li>
+                        <li><strong>Un processus de retraining et de monitoring du modèle est‑il en place (MLOps) ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Surveillez la dérive des données (data drift) et planifiez des réentraînements périodiques.</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATÉGORIE GOUVERNANCE -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingGov">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGov" aria-expanded="false" aria-controls="collapseGov">
+                    <strong><i class="fas fa-building me-2"></i> Gouvernance & Culture (4 questions)</strong>
+                </button>
+            </h2>
+            <div id="collapseGov" class="accordion-collapse collapse" data-bs-parent="#questionsAccordion">
+                <div class="accordion-body">
+                    <ol start="33">
+                        <li><strong>Un comité KPI (stratégique et/ou opérationnel) se réunit‑il régulièrement pour valider et supprimer les indicateurs ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Programmez une réunion mensuelle de 30 minutes pour passer en revue les demandes de nouveaux KPI.</span>
+                        </li>
+                        <li><strong>Chaque KPI a‑t‑il un propriétaire (owner) clairement identifié ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Le propriétaire doit être mentionné dans la fiche KPI et dans le référentiel.</span>
+                        </li>
+                        <li><strong>Les rôles de la gouvernance (sponsor, coach OKR, data steward) sont‑ils définis et pourvus ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Même à petite échelle, désignez un responsable pour chaque rôle.</span>
+                        </li>
+                        <li><strong>La culture data‑driven est‑elle encouragée (décisions basées sur les faits, acceptation de l’échec, partage des données) ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Valorisez publiquement les équipes qui utilisent les données pour améliorer leurs processus.</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATÉGORIE TRANSVERSALE / BONNES PRATIQUES -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTransverse">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTransverse" aria-expanded="false" aria-controls="collapseTransverse">
+                    <strong><i class="fas fa-sync-alt me-2"></i> Transversal & Amélioration continue (4 questions)</strong>
+                </button>
+            </h2>
+            <div id="collapseTransverse" class="accordion-collapse collapse" data-bs-parent="#questionsAccordion">
+                <div class="accordion-body">
+                    <ol start="37">
+                        <li><strong>La chaîne complète (CAP → OKR → KPI → BI → Alertes → IA) est‑elle documentée et partagée ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Créez un « guide du pilotage » d’une dizaine de pages accessible à tous.</span>
+                        </li>
+                        <li><strong>Des rétrospectives sont‑elles organisées après chaque cycle OKR et chaque incident majeur ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Utilisez les rétrospectives pour ajuster les processus, pas seulement les résultats.</span>
+                        </li>
+                        <li><strong>Les décisions stratégiques sont‑elles systématiquement étayées par des données (dashboards, analyses) ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Exigez qu’une présentation des données accompagne toute proposition d’investissement.</span>
+                        </li>
+                        <li><strong>Un plan de formation continue est‑il déployé pour monter en compétence sur l’ensemble de la chaîne ?</strong><br>
+                            <span class="text-muted">💡 <em>Tip :</em> Prévoyez 2 à 3 jours de formation par an pour les managers sur les sujets de pilotage.</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recommandations synthétiques -->
+    <div class="alert alert-primary mt-4">
+        <h5><i class="fas fa-tasks"></i> Synthèse – 5 recommandations clés</h5>
+        <ul>
+            <li><strong>Commencez petit, itérez :</strong> lancez un pilote sur une équipe, un domaine, avant de généraliser.</li>
+            <li><strong>Co‑construisez :</strong> les OKR et KPI qui naissent du terrain sont mieux acceptés et suivis.</li>
+            <li><strong>Automatisez la collecte :</strong> des données fiables et actualisées sont le préalable à toute confiance.</li>
+            <li><strong>Formez et célébrez :</strong> la culture data‑driven se construit par l’exemple et la reconnaissance.</li>
+            <li><strong>Gardez une gouvernance légère :</strong> trop de comités tue l’agilité ; privilégiez des revues courtes et régulières.</li>
+        </ul>
+    </div>
+
+    <div class="text-center mt-4">
+        <p class="text-muted">Ces 40 questions vous aident à auditer votre système de pilotage. Utilisez‑les comme checklist lors de vos revues stratégiques.</p>
+        <a href="#" class="btn btn-outline-primary" onclick="event.preventDefault(); window.print();"><i class="fas fa-print"></i> Imprimer cette checklist</a>
+    </div>
+</div>
+
+		
+		
     </div>
 </div>
 
