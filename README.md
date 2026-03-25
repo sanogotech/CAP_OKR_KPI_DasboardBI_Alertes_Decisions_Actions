@@ -1,7 +1,6 @@
 # CAP OKR KPI Dasboard BI  Alertes Décisions Actions
 
 
-
 # 🧭 CAP → OKR → KPI → Dashboard BI → Alertes → Décisions → Actions
 
 ## 🔥 Le système complet de pilotage de la performance
